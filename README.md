@@ -114,3 +114,10 @@ Each entry is scored across **five key factors**:
   },
   "uid": "PLC-threat-TID-201-0000"
 }
+
+---
+
+## 📜 License
+This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
+See the [LICENSE](./LICENSE) file for details.
+
