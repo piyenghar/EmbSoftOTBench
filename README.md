@@ -74,10 +74,36 @@ Each entry is scored across **five key factors**:
        - Risk 3 = Significant  
        - Risk 4 = High  
        - Risk 5 = Very High  
----
-## 📜 License
-This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
-See the [LICENSE](./LICENSE) file for details.
+
+## 📂 Dataset Files (v1.0)
+
+The dataset is organized into four JSON files:
+
+- **`embsoftotbench-plc-v1.0.json`**  
+  Threat/benign entries specific to **Programmable Logic Controllers (PLCs)**.  
+  Total: 128 entries.
+
+- **`embsoftotbench-hmi-v1.0.json`**  
+  Threat/benign entries specific to **Human-Machine Interfaces (HMIs)**.  
+  Total: 124 entries.
+
+- **`embsoftotbench-drive-v1.0.json`**  
+  Threat/benign entries specific to **Industrial Drives (motor controllers)**.  
+  Total: 122 entries.
+
+- **`embsoftotbench-all-v1.0.json`**  
+  Aggregated file combining **all three device types** above.  
+  Total: 374 entries.
+
+Each entry in these files contains:
+- `variant`: threat vs. benign  
+- `device_type`: PLC, HMI, or Drive  
+- `emb3d_tid`: EMB3D threat ID  
+- `impact`, `exposure`, `vulnerability`, `likelihood`, `risk_raw`, `risk`  
+- `rationale`: factor-by-factor explanation  
+- `evidence`: CWE/CVE links if available  
+- `source_meta`: EMB3D STIX reference  
+- `uid`: dataset-specific unique identifier
 ---
 ## 📑 Example Entry
 ```json
@@ -116,3 +142,8 @@ See the [LICENSE](./LICENSE) file for details.
   },
   "uid": "PLC-threat-TID-201-0000"
 }
+---
+## 📜 License
+This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
+See the [LICENSE](./LICENSE) file for details.
+---
