@@ -1,0 +1,4342 @@
+[
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-201",
+    "emb3d_name": "Inadequate Bootloader Protection and Verification",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Inadequate Bootloader Protection and Verification — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--03c1db93-d257-45c7-a37d-1342f1247fc3",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-201",
+    "emb3d_name": "Inadequate Bootloader Protection and Verification",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Inadequate Bootloader Protection and Verification — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--03c1db93-d257-45c7-a37d-1342f1247fc3",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-202",
+    "emb3d_name": "Exploitable System Network Stack Component",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Exploitable System Network Stack Component — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6f15fa94-38c1-4716-8958-c75e6194c0bf",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-202",
+    "emb3d_name": "Exploitable System Network Stack Component",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Exploitable System Network Stack Component — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6f15fa94-38c1-4716-8958-c75e6194c0bf",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-203",
+    "emb3d_name": "Malicious OS Kernel Driver/Module Installable",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Malicious OS Kernel Driver/Module Installable — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--81176525-91d8-4bab-b2c4-0ca288782af9",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-203",
+    "emb3d_name": "Malicious OS Kernel Driver/Module Installable",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Malicious OS Kernel Driver/Module Installable — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--81176525-91d8-4bab-b2c4-0ca288782af9",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-204",
+    "emb3d_name": "Untrusted Programs Can Access Privileged OS Functions",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Untrusted Programs Can Access Privileged OS Functions — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--93670d27-5d0c-41d2-89c2-5c9b1b8dce72",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-204",
+    "emb3d_name": "Untrusted Programs Can Access Privileged OS Functions",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Untrusted Programs Can Access Privileged OS Functions — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--93670d27-5d0c-41d2-89c2-5c9b1b8dce72",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-205",
+    "emb3d_name": "Existing OS Tools Maliciously Used for Device Manipulation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Existing OS Tools Maliciously Used for Device Manipulation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--14a43189-d196-416d-873f-5c9c68d33d46",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-205",
+    "emb3d_name": "Existing OS Tools Maliciously Used for Device Manipulation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Existing OS Tools Maliciously Used for Device Manipulation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--14a43189-d196-416d-873f-5c9c68d33d46",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-206",
+    "emb3d_name": "Memory Management Protections Subverted",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Memory Management Protections Subverted — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d593e53d-6046-452c-b876-917f0b0b42ca",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-206",
+    "emb3d_name": "Memory Management Protections Subverted",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Memory Management Protections Subverted — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d593e53d-6046-452c-b876-917f0b0b42ca",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-207",
+    "emb3d_name": "Container Escape",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Container Escape — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f3280b96-b050-42e6-adb9-341ea73a2fe6",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-207",
+    "emb3d_name": "Container Escape",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Container Escape — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f3280b96-b050-42e6-adb9-341ea73a2fe6",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-208",
+    "emb3d_name": "Virtual Machine Escape",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Virtual Machine Escape — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2f38fbfc-0a74-4657-a28d-b6c24e4dc2ee",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-208",
+    "emb3d_name": "Virtual Machine Escape",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Virtual Machine Escape — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2f38fbfc-0a74-4657-a28d-b6c24e4dc2ee",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-209",
+    "emb3d_name": "Host Can Manipulate Guest Virtual Machines",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Host Can Manipulate Guest Virtual Machines — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--63a42cdd-ab9d-4c2b-b5c0-d7205a94723c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-209",
+    "emb3d_name": "Host Can Manipulate Guest Virtual Machines",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Host Can Manipulate Guest Virtual Machines — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--63a42cdd-ab9d-4c2b-b5c0-d7205a94723c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-210",
+    "emb3d_name": "Device Vulnerabilities Unpatchable",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial behavior",
+    "scenario": "HMI software: Device Vulnerabilities Unpatchable — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--be1dae3a-4d6d-4842-9de6-cf5d217f0370",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-210",
+    "emb3d_name": "Device Vulnerabilities Unpatchable",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial behavior",
+    "scenario": "HMI software: Device Vulnerabilities Unpatchable — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--be1dae3a-4d6d-4842-9de6-cf5d217f0370",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-211",
+    "emb3d_name": "Device Allows Unauthenticated Firmware Installation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Device Allows Unauthenticated Firmware Installation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2ef9b3dd-19aa-40b0-9c4c-e2a4aef35b85",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-211",
+    "emb3d_name": "Device Allows Unauthenticated Firmware Installation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Device Allows Unauthenticated Firmware Installation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2ef9b3dd-19aa-40b0-9c4c-e2a4aef35b85",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-212",
+    "emb3d_name": "FW/SW Update Integrity Shared Secrets Extraction",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: FW/SW Update Integrity Shared Secrets Extraction — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--435d3f7c-68fe-4c67-b952-61d5713dad36",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-212",
+    "emb3d_name": "FW/SW Update Integrity Shared Secrets Extraction",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: FW/SW Update Integrity Shared Secrets Extraction — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--435d3f7c-68fe-4c67-b952-61d5713dad36",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-213",
+    "emb3d_name": "Faulty FW/SW Update Integrity Verification",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Faulty FW/SW Update Integrity Verification — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--99b03309-3996-4e49-9500-1ed7a700d9cd",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-213",
+    "emb3d_name": "Faulty FW/SW Update Integrity Verification",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Faulty FW/SW Update Integrity Verification — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--99b03309-3996-4e49-9500-1ed7a700d9cd",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-214",
+    "emb3d_name": "Secrets Extracted from Device Root of Trust",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Secrets Extracted from Device Root of Trust — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--02b33020-2f00-4eb7-8323-2281d41275fc",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-214",
+    "emb3d_name": "Secrets Extracted from Device Root of Trust",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Secrets Extracted from Device Root of Trust — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--02b33020-2f00-4eb7-8323-2281d41275fc",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-215",
+    "emb3d_name": "Unencrypted SW/FW Updates",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Unencrypted SW/FW Updates — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--502fd094-4e5d-4cf5-a644-e224bd9f469b",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-215",
+    "emb3d_name": "Unencrypted SW/FW Updates",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Unencrypted SW/FW Updates — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--502fd094-4e5d-4cf5-a644-e224bd9f469b",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-216",
+    "emb3d_name": "Firmware Update Rollbacks Allowed",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial behavior",
+    "scenario": "HMI software: Firmware Update Rollbacks Allowed — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--e62bc4f1-d5c4-4714-b529-e1fc78f2991d",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-216",
+    "emb3d_name": "Firmware Update Rollbacks Allowed",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial behavior",
+    "scenario": "HMI software: Firmware Update Rollbacks Allowed — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--e62bc4f1-d5c4-4714-b529-e1fc78f2991d",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-217",
+    "emb3d_name": "Remotely Initiated Updates Can Cause DoS",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Initiated Updates Can Cause DoS — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2f72b508-1ab5-4ae3-a3f2-63ff5e1e4a56",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-217",
+    "emb3d_name": "Remotely Initiated Updates Can Cause DoS",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Initiated Updates Can Cause DoS — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--2f72b508-1ab5-4ae3-a3f2-63ff5e1e4a56",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-218",
+    "emb3d_name": "Operating System Susceptible to Rootkit",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Operating System Susceptible to Rootkit — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--ed320462-9747-416e-a3f5-109ebe7ce514",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-218",
+    "emb3d_name": "Operating System Susceptible to Rootkit",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Operating System Susceptible to Rootkit — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--ed320462-9747-416e-a3f5-109ebe7ce514",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-219",
+    "emb3d_name": "OS/Kernel Privilege Escalation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: OS/Kernel Privilege Escalation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b45b01bc-d3ea-42c7-b4c7-9e37f87e86b4",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-219",
+    "emb3d_name": "OS/Kernel Privilege Escalation",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: OS/Kernel Privilege Escalation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b45b01bc-d3ea-42c7-b4c7-9e37f87e86b4",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-220",
+    "emb3d_name": "Unpatchable Hardware Root of Trust",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Unpatchable Hardware Root of Trust — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--fe64d2c0-6201-4ccb-8ddc-35964d9b2200",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-220",
+    "emb3d_name": "Unpatchable Hardware Root of Trust",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Unpatchable Hardware Root of Trust — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--fe64d2c0-6201-4ccb-8ddc-35964d9b2200",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-221",
+    "emb3d_name": "Authentication Bypass By Message Replay",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Authentication Bypass By Message Replay — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--c8299e63-c1ee-4bbc-8486-2e7b5a5d1cad",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-221",
+    "emb3d_name": "Authentication Bypass By Message Replay",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Authentication Bypass By Message Replay — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--c8299e63-c1ee-4bbc-8486-2e7b5a5d1cad",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-222",
+    "emb3d_name": "Critical System Service May Be Disabled",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Critical System Service May Be Disabled — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--643c0c24-0b99-4dc4-9de2-b6d5a30334d9",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-222",
+    "emb3d_name": "Critical System Service May Be Disabled",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Critical System Service May Be Disabled — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--643c0c24-0b99-4dc4-9de2-b6d5a30334d9",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-223",
+    "emb3d_name": "System Susceptible to RAM Scraping",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: System Susceptible to RAM Scraping — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--68ec2b84-ef87-4ee8-b14f-27310bd96240",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-223",
+    "emb3d_name": "System Susceptible to RAM Scraping",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: System Susceptible to RAM Scraping — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--68ec2b84-ef87-4ee8-b14f-27310bd96240",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-224",
+    "emb3d_name": "Excessive Access via Software Diagnostic Features",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Excessive Access via Software Diagnostic Features — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--4e9d683d-1400-46c3-9cb5-20cf0c3757c6",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-224",
+    "emb3d_name": "Excessive Access via Software Diagnostic Features",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Excessive Access via Software Diagnostic Features — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--4e9d683d-1400-46c3-9cb5-20cf0c3757c6",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-225",
+    "emb3d_name": "Logs can be manipulated on the device",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Logs can be manipulated on the device — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--4611b574-efed-4237-81a4-d9e238fb1ef4",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-225",
+    "emb3d_name": "Logs can be manipulated on the device",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Logs can be manipulated on the device — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--4611b574-efed-4237-81a4-d9e238fb1ef4",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-226",
+    "emb3d_name": "Device leaks security information in logs",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Device leaks security information in logs — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--68a9740e-95d8-4973-aaaa-e656542eac98",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-226",
+    "emb3d_name": "Device leaks security information in logs",
+    "emb3d_category": "system software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Device leaks security information in logs — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--68a9740e-95d8-4973-aaaa-e656542eac98",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-301",
+    "emb3d_name": "Applications Binaries Modified",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Applications Binaries Modified — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--635d9915-c996-4044-ad11-1ce3eaec8a1c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-301",
+    "emb3d_name": "Applications Binaries Modified",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Applications Binaries Modified — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--635d9915-c996-4044-ad11-1ce3eaec8a1c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-302",
+    "emb3d_name": "Install Untrusted Application",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Install Untrusted Application — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--220d9a30-c0cd-43cc-badb-98e3573cd00a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-302",
+    "emb3d_name": "Install Untrusted Application",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Install Untrusted Application — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--220d9a30-c0cd-43cc-badb-98e3573cd00a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-304",
+    "emb3d_name": "Manipulate Runtime Environment",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Manipulate Runtime Environment — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b9173a9d-33b0-4cba-a638-450a681ff028",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-304",
+    "emb3d_name": "Manipulate Runtime Environment",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Manipulate Runtime Environment — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b9173a9d-33b0-4cba-a638-450a681ff028",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-305",
+    "emb3d_name": "Program Executes Dangerous System Calls",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Program Executes Dangerous System Calls — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--bd5fb5e9-71b7-4817-acc7-349303f95aed",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-305",
+    "emb3d_name": "Program Executes Dangerous System Calls",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Program Executes Dangerous System Calls — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--bd5fb5e9-71b7-4817-acc7-349303f95aed",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-306",
+    "emb3d_name": "Sandboxed Environments Escaped",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Sandboxed Environments Escaped — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9f65791a-cb28-4dde-b903-3885e40d8f64",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-306",
+    "emb3d_name": "Sandboxed Environments Escaped",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Sandboxed Environments Escaped — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9f65791a-cb28-4dde-b903-3885e40d8f64",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-307",
+    "emb3d_name": "Device Code Representations Inconsistent",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Device Code Representations Inconsistent — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--c98bbe9f-e478-40d5-b585-cc1bc83c8105",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-307",
+    "emb3d_name": "Device Code Representations Inconsistent",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Device Code Representations Inconsistent — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--c98bbe9f-e478-40d5-b585-cc1bc83c8105",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-308",
+    "emb3d_name": "Code Overwritten to Avoid Detection",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Code Overwritten to Avoid Detection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--1f94d3f8-d111-463e-afe3-1779ea76b7dd",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-308",
+    "emb3d_name": "Code Overwritten to Avoid Detection",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Code Overwritten to Avoid Detection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--1f94d3f8-d111-463e-afe3-1779ea76b7dd",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-309",
+    "emb3d_name": "Device Exploits Engineering Workstation",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Device Exploits Engineering Workstation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector requires local/engineering access.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7d38e8f0-09a8-45f2-afbe-62fb6d20a1f3",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-309",
+    "emb3d_name": "Device Exploits Engineering Workstation",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Device Exploits Engineering Workstation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7d38e8f0-09a8-45f2-afbe-62fb6d20a1f3",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-310",
+    "emb3d_name": "Remotely Accessible Unauthenticated Services",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Accessible Unauthenticated Services — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6317d395-281c-4677-b1a3-33e588cde84a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-310",
+    "emb3d_name": "Remotely Accessible Unauthenticated Services",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Accessible Unauthenticated Services — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6317d395-281c-4677-b1a3-33e588cde84a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-311",
+    "emb3d_name": "Default Credentials",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Default Credentials — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--e5f90347-e6a0-412e-ab54-18aa1185ef09",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-311",
+    "emb3d_name": "Default Credentials",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Default Credentials — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--e5f90347-e6a0-412e-ab54-18aa1185ef09",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-312",
+    "emb3d_name": "Credential Change Mechanism Can Be Abused",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Credential Change Mechanism Can Be Abused — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--85204183-21e8-44d9-bd71-a7928eb8736f",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-312",
+    "emb3d_name": "Credential Change Mechanism Can Be Abused",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Credential Change Mechanism Can Be Abused — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--85204183-21e8-44d9-bd71-a7928eb8736f",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-313",
+    "emb3d_name": "Unauthenticated Session Changes Credential",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Unauthenticated Session Changes Credential — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--aa091fdb-adaa-4e89-a8c3-c40784fb73a1",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-313",
+    "emb3d_name": "Unauthenticated Session Changes Credential",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Unauthenticated Session Changes Credential — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--aa091fdb-adaa-4e89-a8c3-c40784fb73a1",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-314",
+    "emb3d_name": "Passwords Can Be Guessed Using Brute-Force Attempts",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Passwords Can Be Guessed Using Brute-Force Attempts — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--825299f4-1bab-4682-82ba-450bfb7641d1",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-314",
+    "emb3d_name": "Passwords Can Be Guessed Using Brute-Force Attempts",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Passwords Can Be Guessed Using Brute-Force Attempts — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--825299f4-1bab-4682-82ba-450bfb7641d1",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-315",
+    "emb3d_name": "Password Retrieval Mechanism Abused",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Password Retrieval Mechanism Abused — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9ee0cfb0-5e71-47be-8576-de8802eb6b7e",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-315",
+    "emb3d_name": "Password Retrieval Mechanism Abused",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Password Retrieval Mechanism Abused — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9ee0cfb0-5e71-47be-8576-de8802eb6b7e",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-316",
+    "emb3d_name": "Incorrect Certificate Verification Allows Authentication Bypass",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Incorrect Certificate Verification Allows Authentication Bypass — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6f00418f-9859-4fce-966f-ffa7a4913525",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-316",
+    "emb3d_name": "Incorrect Certificate Verification Allows Authentication Bypass",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Incorrect Certificate Verification Allows Authentication Bypass — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--6f00418f-9859-4fce-966f-ffa7a4913525",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-317",
+    "emb3d_name": "Predictable Cryptographic Key",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Predictable Cryptographic Key — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--13394383-1d88-4ee4-b2b9-0f26fc03a657",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-317",
+    "emb3d_name": "Predictable Cryptographic Key",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Predictable Cryptographic Key — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--13394383-1d88-4ee4-b2b9-0f26fc03a657",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-318",
+    "emb3d_name": "Insecure Cryptographic Implementation",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Insecure Cryptographic Implementation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d0ee8c9b-3b69-450d-897c-f1cb463bcb47",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-318",
+    "emb3d_name": "Insecure Cryptographic Implementation",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Insecure Cryptographic Implementation — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d0ee8c9b-3b69-450d-897c-f1cb463bcb47",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-319",
+    "emb3d_name": "Cross Site Scripting (XSS)",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Cross Site Scripting (XSS) — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7db512d9-bbe1-4d46-a0fe-6cbeb7050f2f",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-319",
+    "emb3d_name": "Cross Site Scripting (XSS)",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Cross Site Scripting (XSS) — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7db512d9-bbe1-4d46-a0fe-6cbeb7050f2f",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-320",
+    "emb3d_name": "SQL Injection",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: SQL Injection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f04ee0a2-161f-42dd-a886-0f7cb99cb61a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-320",
+    "emb3d_name": "SQL Injection",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: SQL Injection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f04ee0a2-161f-42dd-a886-0f7cb99cb61a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-321",
+    "emb3d_name": "HTTP Application Session Hijacking",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: HTTP Application Session Hijacking — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--8b6a20c9-ae6e-4bae-9ae7-7486986a3fd0",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-321",
+    "emb3d_name": "HTTP Application Session Hijacking",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: HTTP Application Session Hijacking — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--8b6a20c9-ae6e-4bae-9ae7-7486986a3fd0",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-322",
+    "emb3d_name": "Cross Site Request Forgery (CSRF)",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Cross Site Request Forgery (CSRF) — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--8b0a83f2-9988-48a7-be05-b6e17d77d19e",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-322",
+    "emb3d_name": "Cross Site Request Forgery (CSRF)",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Cross Site Request Forgery (CSRF) — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--8b0a83f2-9988-48a7-be05-b6e17d77d19e",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-323",
+    "emb3d_name": "Path Traversal",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Path Traversal — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--79e6a926-00d3-4da4-ba37-f23ac4c28b69",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-323",
+    "emb3d_name": "Path Traversal",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Path Traversal — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--79e6a926-00d3-4da4-ba37-f23ac4c28b69",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-324",
+    "emb3d_name": "HTTP Direct Object Reference",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: HTTP Direct Object Reference — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f5715798-c7aa-4d82-805a-1ad6308a5983",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-324",
+    "emb3d_name": "HTTP Direct Object Reference",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: HTTP Direct Object Reference — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f5715798-c7aa-4d82-805a-1ad6308a5983",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-325",
+    "emb3d_name": "HTTP Injection/Response Splitting",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: HTTP Injection/Response Splitting — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d48175e7-c5bd-47ff-9fe0-35cd6d54fe9c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-325",
+    "emb3d_name": "HTTP Injection/Response Splitting",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: HTTP Injection/Response Splitting — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--d48175e7-c5bd-47ff-9fe0-35cd6d54fe9c",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-326",
+    "emb3d_name": "Insecure Deserialization",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Insecure Deserialization — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector requires local/engineering access.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b5e980ce-bb43-43ec-802c-25907e355e99",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-326",
+    "emb3d_name": "Insecure Deserialization",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Insecure Deserialization — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--b5e980ce-bb43-43ec-802c-25907e355e99",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-327",
+    "emb3d_name": "Out of Bounds Memory Access",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Out of Bounds Memory Access — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--55121d60-3cc2-409b-9168-7e855dbc7404",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-327",
+    "emb3d_name": "Out of Bounds Memory Access",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Out of Bounds Memory Access — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--55121d60-3cc2-409b-9168-7e855dbc7404",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-328",
+    "emb3d_name": "Hardcoded Credentials",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Hardcoded Credentials — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--dda83adc-ea39-4e82-92e8-5022dff4d58a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-328",
+    "emb3d_name": "Hardcoded Credentials",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Hardcoded Credentials — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--dda83adc-ea39-4e82-92e8-5022dff4d58a",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-329",
+    "emb3d_name": "Improper Password Storage",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Improper Password Storage — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 3,
+    "exposure": 2,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (3) - 1 = Likelihood (4).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9367d60b-3ef6-4d2a-8da3-71ffd9ea2418",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-329",
+    "emb3d_name": "Improper Password Storage",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Improper Password Storage — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 2,
+    "exposure": 1,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (2) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--9367d60b-3ef6-4d2a-8da3-71ffd9ea2418",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-330",
+    "emb3d_name": "Cryptographic Timing Side-Channel",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Cryptographic Timing Side-Channel — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = Likelihood (3).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "No explicit vector; defaulted to local/engineering exposure (2).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--1d285166-3508-48ca-a8c6-05f1117faa03",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_local",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-330",
+    "emb3d_name": "Cryptographic Timing Side-Channel",
+    "emb3d_category": "application software",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Cryptographic Timing Side-Channel — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 1,
+    "vulnerability": 1,
+    "exposure": 1,
+    "risk_raw": 3,
+    "risk": 1,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (1) + VUL (1) - 1 = 1 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 1 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (1) = 3; mapped via matrix to Risk = 1."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--1d285166-3508-48ca-a8c6-05f1117faa03",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-404",
+    "emb3d_name": "Remotely Triggerable Deadlock/DoS",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Triggerable Deadlock/DoS — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f099f3a2-1727-4d77-8af8-59143592e245",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-404",
+    "emb3d_name": "Remotely Triggerable Deadlock/DoS",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Remotely Triggerable Deadlock/DoS — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f099f3a2-1727-4d77-8af8-59143592e245",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-405",
+    "emb3d_name": "Network Stack Resource Exhaustion",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Network Stack Resource Exhaustion — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f7fb3293-88cf-4896-bbff-bc1e04a17a48",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-405",
+    "emb3d_name": "Network Stack Resource Exhaustion",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Network Stack Resource Exhaustion — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--f7fb3293-88cf-4896-bbff-bc1e04a17a48",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-406",
+    "emb3d_name": "Unauthorized Messages or Connections",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Unauthorized Messages or Connections — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--20e1c1fe-e1de-4a80-a22e-3184f9484736",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-406",
+    "emb3d_name": "Unauthorized Messages or Connections",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Unauthorized Messages or Connections — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--20e1c1fe-e1de-4a80-a22e-3184f9484736",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-407",
+    "emb3d_name": "Missing Message Replay Protection",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Missing Message Replay Protection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--027d72fa-4254-45ac-b2b0-c90578336f92",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-407",
+    "emb3d_name": "Missing Message Replay Protection",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Missing Message Replay Protection — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--027d72fa-4254-45ac-b2b0-c90578336f92",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-408",
+    "emb3d_name": "Unencrypted Sensitive Data Communication",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Unencrypted Sensitive Data Communication — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--0a7390e5-fb6a-4f05-84dd-1cce5466d1de",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-408",
+    "emb3d_name": "Unencrypted Sensitive Data Communication",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "observed adversarial technique",
+    "scenario": "HMI software: Unencrypted Sensitive Data Communication — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--0a7390e5-fb6a-4f05-84dd-1cce5466d1de",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-410",
+    "emb3d_name": "Cryptographic Protocol Side Channel",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Cryptographic Protocol Side Channel — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 4,
+    "vulnerability": 2,
+    "exposure": 3,
+    "risk_raw": 12,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (2) - 1 = Likelihood (4).",
+      "vulnerability": "No high-severity CWE evidence; defaulted to medium vulnerability (2).",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (4) = 12; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--a71049a8-bfe9-47cf-a645-2b3d04cd3bdb",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_default",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-410",
+    "emb3d_name": "Cryptographic Protocol Side Channel",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "proof of concept",
+    "scenario": "HMI software: Cryptographic Protocol Side Channel — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 2,
+    "vulnerability": 1,
+    "exposure": 2,
+    "risk_raw": 6,
+    "risk": 2,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (1) - 1 = 2 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 1 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (2) = 6; mapped via matrix to Risk = 2."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--a71049a8-bfe9-47cf-a645-2b3d04cd3bdb",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "threat",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-411",
+    "emb3d_name": "Weak/Insecure Cryptographic Protocol",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Weak/Insecure Cryptographic Protocol — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 5,
+    "vulnerability": 3,
+    "exposure": 3,
+    "risk_raw": 15,
+    "risk": 4,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (3) + VUL (3) - 1 = Likelihood (5).",
+      "vulnerability": "Threat description indicates missing/weak protections or memory-safety issues.",
+      "exposure": "Vector is remote/network reachable.",
+      "risk": "Risk_raw = Impact (3) × Likelihood (5) = 15; mapped via matrix to Risk = 4."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7da95ae6-55cf-4cdc-ae5a-da0f86688cfb",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul",
+    "vulnerability_source": "heuristic_text_match",
+    "exposure_source": "vector_keyword_remote",
+    "risk_source": "matrix_lookup"
+  },
+  {
+    "variant": "benign",
+    "device_type": "HMI",
+    "emb3d_tid": "TID-411",
+    "emb3d_name": "Weak/Insecure Cryptographic Protocol",
+    "emb3d_category": "networking",
+    "emb3d_maturity": "known exploitable weakness",
+    "scenario": "HMI software: Weak/Insecure Cryptographic Protocol — per EMB3D description/evidence.",
+    "impact": 3,
+    "likelihood": 3,
+    "vulnerability": 2,
+    "exposure": 2,
+    "risk_raw": 9,
+    "risk": 3,
+    "rationale": {
+      "impact": "HMI role implies high consequence if software layer is compromised.",
+      "likelihood": "Derived as EXP (2) + VUL (2) - 1 = 3 (mitigated benign case).",
+      "vulnerability": "Mitigation applied, vulnerability set to 2 (benign variant).",
+      "exposure": "Mitigation applied, exposure set to 2 (benign variant).",
+      "risk": "Risk_raw = Impact (3) × Likelihood (3) = 9; mapped via matrix to Risk = 3."
+    },
+    "evidence": {
+      "cwes": [],
+      "cves": []
+    },
+    "source_meta": {
+      "stix_object_id": "vulnerability--7da95ae6-55cf-4cdc-ae5a-da0f86688cfb",
+      "emb3d_version": "2.0.1"
+    },
+    "impact_source": "expert_prior",
+    "likelihood_source": "derived_from_exp_vul (benign)",
+    "vulnerability_source": "mitigation_override",
+    "exposure_source": "mitigation_override",
+    "risk_source": "matrix_lookup"
+  }
+]
