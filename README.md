@@ -105,6 +105,11 @@ Each entry in these files contains:
 - `source_meta`: EMB3D STIX reference  
 - `uid`: dataset-specific unique identifier
 ---
+---
+## 📜 License
+This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
+See the [LICENSE](./LICENSE) file for details.
+---
 ## 📑 Example Entry
 ```json
 {
@@ -142,8 +147,3 @@ Each entry in these files contains:
   },
   "uid": "PLC-threat-TID-201-0000"
 }
----
-## 📜 License
-This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
-See the [LICENSE](./LICENSE) file for details.
----
