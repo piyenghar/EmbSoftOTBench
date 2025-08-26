@@ -32,7 +32,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-201-0000"
   },
   {
     "variant": "benign",
@@ -67,7 +68,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-201-0000"
   },
   {
     "variant": "threat",
@@ -102,7 +104,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-202-0000"
   },
   {
     "variant": "benign",
@@ -137,7 +140,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-202-0000"
   },
   {
     "variant": "threat",
@@ -172,7 +176,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-203-0000"
   },
   {
     "variant": "benign",
@@ -207,7 +212,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-203-0000"
   },
   {
     "variant": "threat",
@@ -242,7 +248,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-204-0000"
   },
   {
     "variant": "benign",
@@ -277,7 +284,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-204-0000"
   },
   {
     "variant": "threat",
@@ -312,7 +320,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-205-0000"
   },
   {
     "variant": "benign",
@@ -347,7 +356,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-205-0000"
   },
   {
     "variant": "threat",
@@ -382,7 +392,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-206-0000"
   },
   {
     "variant": "benign",
@@ -417,7 +428,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-206-0000"
   },
   {
     "variant": "threat",
@@ -452,7 +464,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-207-0000"
   },
   {
     "variant": "benign",
@@ -487,7 +500,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-207-0000"
   },
   {
     "variant": "threat",
@@ -522,7 +536,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-208-0000"
   },
   {
     "variant": "benign",
@@ -557,7 +572,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-208-0000"
   },
   {
     "variant": "threat",
@@ -592,7 +608,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-209-0000"
   },
   {
     "variant": "benign",
@@ -627,7 +644,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-209-0000"
   },
   {
     "variant": "threat",
@@ -662,7 +680,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-210-0000"
   },
   {
     "variant": "benign",
@@ -697,7 +716,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-210-0000"
   },
   {
     "variant": "threat",
@@ -732,7 +752,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-211-0000"
   },
   {
     "variant": "benign",
@@ -767,7 +788,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-211-0000"
   },
   {
     "variant": "threat",
@@ -802,7 +824,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-212-0000"
   },
   {
     "variant": "benign",
@@ -837,7 +860,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-212-0000"
   },
   {
     "variant": "threat",
@@ -872,7 +896,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-213-0000"
   },
   {
     "variant": "benign",
@@ -907,7 +932,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-213-0000"
   },
   {
     "variant": "threat",
@@ -942,7 +968,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-214-0000"
   },
   {
     "variant": "benign",
@@ -977,7 +1004,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-214-0000"
   },
   {
     "variant": "threat",
@@ -1012,7 +1040,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-215-0000"
   },
   {
     "variant": "benign",
@@ -1047,7 +1076,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-215-0000"
   },
   {
     "variant": "threat",
@@ -1082,7 +1112,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-216-0000"
   },
   {
     "variant": "benign",
@@ -1117,7 +1148,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-216-0000"
   },
   {
     "variant": "threat",
@@ -1152,7 +1184,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-217-0000"
   },
   {
     "variant": "benign",
@@ -1187,7 +1220,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-217-0000"
   },
   {
     "variant": "threat",
@@ -1222,7 +1256,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-218-0000"
   },
   {
     "variant": "benign",
@@ -1257,7 +1292,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-218-0000"
   },
   {
     "variant": "threat",
@@ -1292,7 +1328,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-219-0000"
   },
   {
     "variant": "benign",
@@ -1327,7 +1364,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-219-0000"
   },
   {
     "variant": "threat",
@@ -1362,7 +1400,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-220-0000"
   },
   {
     "variant": "benign",
@@ -1397,7 +1436,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-220-0000"
   },
   {
     "variant": "threat",
@@ -1432,7 +1472,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-221-0000"
   },
   {
     "variant": "benign",
@@ -1467,7 +1508,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-221-0000"
   },
   {
     "variant": "threat",
@@ -1502,7 +1544,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-222-0000"
   },
   {
     "variant": "benign",
@@ -1537,7 +1580,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-222-0000"
   },
   {
     "variant": "threat",
@@ -1572,7 +1616,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-223-0000"
   },
   {
     "variant": "benign",
@@ -1607,7 +1652,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-223-0000"
   },
   {
     "variant": "threat",
@@ -1642,7 +1688,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-224-0000"
   },
   {
     "variant": "benign",
@@ -1677,7 +1724,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-224-0000"
   },
   {
     "variant": "threat",
@@ -1712,7 +1760,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-225-0000"
   },
   {
     "variant": "benign",
@@ -1747,7 +1796,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-225-0000"
   },
   {
     "variant": "threat",
@@ -1782,7 +1832,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-226-0000"
   },
   {
     "variant": "benign",
@@ -1817,7 +1868,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-226-0000"
   },
   {
     "variant": "threat",
@@ -1852,7 +1904,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-301-0000"
   },
   {
     "variant": "benign",
@@ -1887,7 +1940,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-301-0000"
   },
   {
     "variant": "threat",
@@ -1922,7 +1976,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-302-0000"
   },
   {
     "variant": "benign",
@@ -1957,7 +2012,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-302-0000"
   },
   {
     "variant": "threat",
@@ -1992,7 +2048,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-304-0000"
   },
   {
     "variant": "benign",
@@ -2027,7 +2084,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-304-0000"
   },
   {
     "variant": "threat",
@@ -2062,7 +2120,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-305-0000"
   },
   {
     "variant": "benign",
@@ -2097,7 +2156,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-305-0000"
   },
   {
     "variant": "threat",
@@ -2132,7 +2192,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-306-0000"
   },
   {
     "variant": "benign",
@@ -2167,7 +2228,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-306-0000"
   },
   {
     "variant": "threat",
@@ -2202,7 +2264,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-307-0000"
   },
   {
     "variant": "benign",
@@ -2237,7 +2300,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-307-0000"
   },
   {
     "variant": "threat",
@@ -2272,7 +2336,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-308-0000"
   },
   {
     "variant": "benign",
@@ -2307,7 +2372,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-308-0000"
   },
   {
     "variant": "threat",
@@ -2342,7 +2408,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-309-0000"
   },
   {
     "variant": "benign",
@@ -2377,7 +2444,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-309-0000"
   },
   {
     "variant": "threat",
@@ -2412,7 +2480,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-310-0000"
   },
   {
     "variant": "benign",
@@ -2447,7 +2516,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-310-0000"
   },
   {
     "variant": "threat",
@@ -2482,7 +2552,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-311-0000"
   },
   {
     "variant": "benign",
@@ -2517,7 +2588,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-311-0000"
   },
   {
     "variant": "threat",
@@ -2552,7 +2624,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-312-0000"
   },
   {
     "variant": "benign",
@@ -2587,7 +2660,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-312-0000"
   },
   {
     "variant": "threat",
@@ -2622,7 +2696,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-313-0000"
   },
   {
     "variant": "benign",
@@ -2657,7 +2732,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-313-0000"
   },
   {
     "variant": "threat",
@@ -2692,7 +2768,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-314-0000"
   },
   {
     "variant": "benign",
@@ -2727,7 +2804,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-314-0000"
   },
   {
     "variant": "threat",
@@ -2762,7 +2840,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-315-0000"
   },
   {
     "variant": "benign",
@@ -2797,7 +2876,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-315-0000"
   },
   {
     "variant": "threat",
@@ -2832,7 +2912,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-316-0000"
   },
   {
     "variant": "benign",
@@ -2867,7 +2948,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-316-0000"
   },
   {
     "variant": "threat",
@@ -2902,7 +2984,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-317-0000"
   },
   {
     "variant": "benign",
@@ -2937,7 +3020,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-317-0000"
   },
   {
     "variant": "threat",
@@ -2972,7 +3056,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-318-0000"
   },
   {
     "variant": "benign",
@@ -3007,7 +3092,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-318-0000"
   },
   {
     "variant": "threat",
@@ -3042,7 +3128,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-319-0000"
   },
   {
     "variant": "benign",
@@ -3077,7 +3164,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-319-0000"
   },
   {
     "variant": "threat",
@@ -3112,7 +3200,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-320-0000"
   },
   {
     "variant": "benign",
@@ -3147,7 +3236,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-320-0000"
   },
   {
     "variant": "threat",
@@ -3182,7 +3272,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-321-0000"
   },
   {
     "variant": "benign",
@@ -3217,7 +3308,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-321-0000"
   },
   {
     "variant": "threat",
@@ -3252,7 +3344,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-322-0000"
   },
   {
     "variant": "benign",
@@ -3287,7 +3380,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-322-0000"
   },
   {
     "variant": "threat",
@@ -3322,7 +3416,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-323-0000"
   },
   {
     "variant": "benign",
@@ -3357,7 +3452,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-323-0000"
   },
   {
     "variant": "threat",
@@ -3392,7 +3488,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-324-0000"
   },
   {
     "variant": "benign",
@@ -3427,7 +3524,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-324-0000"
   },
   {
     "variant": "threat",
@@ -3462,7 +3560,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-325-0000"
   },
   {
     "variant": "benign",
@@ -3497,7 +3596,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-325-0000"
   },
   {
     "variant": "threat",
@@ -3532,7 +3632,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-326-0000"
   },
   {
     "variant": "benign",
@@ -3567,7 +3668,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-326-0000"
   },
   {
     "variant": "threat",
@@ -3602,7 +3704,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-327-0000"
   },
   {
     "variant": "benign",
@@ -3637,7 +3740,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-327-0000"
   },
   {
     "variant": "threat",
@@ -3672,7 +3776,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-328-0000"
   },
   {
     "variant": "benign",
@@ -3707,7 +3812,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-328-0000"
   },
   {
     "variant": "threat",
@@ -3742,7 +3848,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-329-0000"
   },
   {
     "variant": "benign",
@@ -3777,7 +3884,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-329-0000"
   },
   {
     "variant": "threat",
@@ -3812,7 +3920,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_local",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-330-0000"
   },
   {
     "variant": "benign",
@@ -3847,7 +3956,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-330-0000"
   },
   {
     "variant": "threat",
@@ -3882,7 +3992,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-404-0000"
   },
   {
     "variant": "benign",
@@ -3917,7 +4028,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-404-0000"
   },
   {
     "variant": "threat",
@@ -3952,7 +4064,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-405-0000"
   },
   {
     "variant": "benign",
@@ -3987,7 +4100,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-405-0000"
   },
   {
     "variant": "threat",
@@ -4022,7 +4136,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-406-0000"
   },
   {
     "variant": "benign",
@@ -4057,7 +4172,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-406-0000"
   },
   {
     "variant": "threat",
@@ -4092,7 +4208,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-407-0000"
   },
   {
     "variant": "benign",
@@ -4127,7 +4244,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-407-0000"
   },
   {
     "variant": "threat",
@@ -4162,7 +4280,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-408-0000"
   },
   {
     "variant": "benign",
@@ -4197,7 +4316,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-408-0000"
   },
   {
     "variant": "threat",
@@ -4232,7 +4352,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_default",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-410-0000"
   },
   {
     "variant": "benign",
@@ -4267,7 +4388,8 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-410-0000"
   },
   {
     "variant": "threat",
@@ -4302,7 +4424,8 @@
     "likelihood_source": "derived_from_exp_vul",
     "vulnerability_source": "heuristic_text_match",
     "exposure_source": "vector_keyword_remote",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-threat-TID-411-0000"
   },
   {
     "variant": "benign",
@@ -4337,6 +4460,7 @@
     "likelihood_source": "derived_from_exp_vul (benign)",
     "vulnerability_source": "mitigation_override",
     "exposure_source": "mitigation_override",
-    "risk_source": "matrix_lookup"
+    "risk_source": "matrix_lookup",
+    "uid": "HMI-benign-TID-411-0000"
   }
 ]
