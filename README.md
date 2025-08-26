@@ -16,6 +16,7 @@ While MITRE’s [EMB3D](https://emb3d.mitre.org/) framework provides a curated k
 - Providing **scored scenarios** with risk assessments.
 - Supplying **human-readable rationales** for each factor, ensuring transparency.
 - Offering **threat vs. benign variants** to test model sensitivity to mitigations.
+- Adding **unique identifiers** for every entry to support reproducibility.
 
 ---
 
@@ -29,10 +30,11 @@ While MITRE’s [EMB3D](https://emb3d.mitre.org/) framework provides a curated k
   - System Software
   - Application Software
   - Networking
+  - *(Hardware excluded in this release — focus = embedded software risks)*
 
 - **Variants**:
   - **Threat**: Unmitigated baseline (default exposure & vulnerability).
-  - **Benign**: Mitigated scenario (exposure & vulnerability reduced to 1).
+  - **Benign**: Mitigated counterpart where **Exposure and Vulnerability are set to 1**, lowering likelihood and risk.
 
 - **Total Entries**:
   - PLC: *128 scenarios*
@@ -46,7 +48,7 @@ While MITRE’s [EMB3D](https://emb3d.mitre.org/) framework provides a curated k
 Each entry is scored across **five key factors**:
 
 1. **Impact (1–4)**  
-   - Expert prior, device-role specific (e.g., PLC = 4, HMI = 3, Drive = 4).
+   - Expert prior, device-role specific (e.g., PLC = 4, HMI = 3, Drive = 4).  
    - Reflects consequence of compromise.
 
 2. **Exposure (1–3)**  
@@ -63,13 +65,15 @@ Each entry is scored across **five key factors**:
      Likelihood = min(Exposure + Vulnerability - 1, 5)
      ```
 
-5. **Risk (1–5)**  
-   - Computed from **Impact × Likelihood** using a risk matrix:  
-     - Risk 1 = Low  
-     - Risk 2 = Medium  
-     - Risk 3 = Significant  
-     - Risk 4 = High  
-     - Risk 5 = Very High  
+5. **Risk**  
+   - **Two fields are provided**:  
+     - `risk_raw`: numeric intermediate = Impact × Likelihood.  
+     - `risk`: final categorical risk (1–5) from a risk matrix:  
+       - Risk 1 = Low  
+       - Risk 2 = Medium  
+       - Risk 3 = Significant  
+       - Risk 4 = High  
+       - Risk 5 = Very High  
 
 ---
 
@@ -107,5 +111,6 @@ Each entry is scored across **five key factors**:
   "source_meta": {
     "stix_object_id": "vulnerability--03c1db93-d257-45c7-a37d-1342f1247fc3",
     "emb3d_version": "2.0.1"
-  }
+  },
+  "uid": "PLC-threat-TID-201-0000"
 }
