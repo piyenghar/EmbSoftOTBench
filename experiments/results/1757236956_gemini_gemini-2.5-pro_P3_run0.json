@@ -1,0 +1,3602 @@
+[
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:22:55Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1941, 'totalTokenCount': 3940, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1941}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': '8E69aL2eKay-vdIPxZ-VoAw'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19172,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:23:10Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, implying local execution. VUL=2 based on the explicit mention of a 'proof of concept'. IMP=1 as the scenario describes a vulnerability mechanism without any specified operational, process, or safety consequence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 13942,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:23:27Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local. VUL=3 due to 'observed adversarial behavior' and the vulnerability being 'unpatchable', indicating an active, unmitigated threat. IMP=1 as no specific operational or safety consequences are mentioned, defaulting to the lowest impact per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16295,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:23:51Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'KE-9aIbRGtfivdIP9bTL4A0'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 23994,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:24:11Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'O0-9aI2_NbGP28oP6M3LqAg'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18937,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:24:29Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is specified, assuming local action for firmware rollback. VUL=2 based on 'observed adversarial behavior' cue, indicating a known TTP. IMP=1 as the scenario describes a vulnerability mechanism without stating any operational consequence (process, safety, or UI impact), defaulting to the lowest impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17915,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:24:48Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18346,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:25:07Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18205,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:25:23Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as no remote access is stated, assuming local access for logs. VUL=2 based on 'known exploitable weakness' cue. IMP=2 as leaking security information is a diagnostic/information disclosure issue with no specified operational impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15860,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:25:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, implying local access for binary modification. VUL",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21455,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:26:04Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1938, 'totalTokenCount': 3937, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1938}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'rE-9aL70OsO-vdIPtJG8qQQ'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18284,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:26:22Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not specified, assuming local/on-site. VUL=2 based on 'known exploitable weakness' cue, indicating a confirmed vulnerability without evidence of active exploitation. IMP=1 as no operational or safety consequences are mentioned in the scenario, defaulting to the lowest impact per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17698,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:26:41Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as HTTP implies connectivity but remote is not explicit, defaulting to local. VUL=2 due to explicit 'proof of concept'. IMP=2 as no operational, process, or safety impact is described, defaulting to minor inconvenience per anti-inflation",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18463,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:26:57Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not specified, defaulting to local. VUL=2 based on the 'known exploitable weakness' cue. IMP=1 as the scenario provides no evidence of any operational, process, or safety impact resulting from the improper password storage.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16151,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:27:16Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 because 'networking' implies a local network; remote is not explicitly stated. VUL=2 based on 'observed adversarial technique' cue. IMP=1 as no specific operational or safety consequence is described, defaulting to the lowest impact per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17734,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:27:34Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, implying local access for driver installation. VUL=2 based on 'observed adversarial technique' cue. IMP=1 due to a complete lack of evidence for any operational, process, or safety consequences in the scenario text.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17813,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:27:53Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1941, 'totalTokenCount': 3940, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1941}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'GlC9aIj4Hf7hxN8PksbN0AI'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18638,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:28:12Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local. VUL=3 due to 'observed adversarial behavior' and the vulnerability being 'unpatchable', indicating an active, unmitigated threat. IMP=1 as no specific operational or safety consequences are mentioned, defaulting to the lowest impact per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18578,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:28:29Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not explicitly stated, defaulting to local. VUL=2 based on the explicit 'proof of concept' maturity. IMP=1 as 'Shared Secrets Extraction' is an information disclosure with no specified operational or safety impact; the lowest impact is chosen per tie-breaker rules for ambiguity.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16668,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:28:50Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'U1C9aOXSD9qbvdIPj7vnuQQ'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 20013,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:29:08Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is specified, assuming local action for firmware rollback. VUL=2 based on 'observed adversarial behavior' cue, indicating a known TTP. IMP=1 as the scenario describes a vulnerability mechanism without stating any operational consequence (process, safety, or UI impact), defaulting to the lowest impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17836,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:29:27Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17950,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:29:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'ilC9aIzaLqj4xN8Pl43_iA4'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18210,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:30:01Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as no remote access is stated (local/on-site assumed). VUL=2 due to 'known exploitable weakness' but no active exploitation. IMP=2 as 'leaks security information in logs' is a diagnostic/information disclosure issue with no direct operational effect.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 14569,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:30:18Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as no remote access is stated, implying local access for binary modification. VUL=3 based on 'observed adversarial technique' cue, indicating active exploitation. IMP=1 as the scenario provides no evidence of any operational, process, or safety impact, forcing the lowest default per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16642,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:30:39Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1938, 'totalTokenCount': 3937, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1938}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'wFC9aKnnKbrtxs0Pi7-esQU'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21197,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:30:59Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19125,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:31:16Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as HTTP implies local network but no explicit remote cue. VUL=2 based on 'proof of concept'. IMP=1 as no operational, process, or safety impact is described, forcing the lowest default per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16470,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:31:35Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1936, 'totalTokenCount': 3935, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1936}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': '-FC9aJ2MB73yxs0Plt6B4Q0'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18325,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:31:53Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as 'networking' implies local connectivity, not explicitly remote. VUL=2 due to 'observed adversarial technique' matching observed TTP. IMP=1 as no operational, process, or safety impact is described, defaulting to the lowest value per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17255,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:32:10Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated; bootloader vulnerability implies local/physical access. VUL=2 based on the 'observed adversarial technique' cue. IMP=1 as the scenario provides no evidence of any operational, process, or safety impact, forcing the lowest rating per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17089,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:32:28Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is explicitly stated, defaulting to local. VUL=2 based on 'known exploitable weakness' cue, indicating a confirmed vulnerability without active exploitation. IMP=1 due to a complete lack of evidence for any operational, process, or safety consequences in the scenario text.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17708,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:32:48Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'QVG9aL2lBtfivdIP9bTL4A0'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18917,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:33:04Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as no remote access is stated; firmware updates imply a local/on-site connection. VUL=2 based on the explicit 'proof of concept' maturity. IMP=3 as a compromised HMI directly impacts operator visibility/guidance, with no evidence for higher process or safety consequences.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16023,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:33:24Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as HMI implies local on-site access and no remote connectivity is mentioned. VUL=3 due to 'observed adversarial behavior' indicating active exploitation. IMP=1 as the scenario describes a vulnerability condition but provides no evidence of any operational, safety, or UI impact, forcing the lowest rating per anti-inflation rules.\",\n  \"rule_consistency\": {\n",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19328,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:33:44Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1942, 'totalTokenCount': 3941, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1942}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'eVG9aPHiHNaivdIPsvSzwQ8'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19501,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:34:03Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1938, 'totalTokenCount': 3937, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1938}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'i1G9aN-MM6fXvdIPvY7_kAc'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17868,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:34:20Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not explicitly stated for the HMI, defaulting to local access. VUL=2 based on the explicit 'proof of concept' maturity cue. IMP=1 as the scenario provides no evidence of any operational, process, or safety consequences, forcing the lowest impact rating per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16616,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:34:42Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1936, 'totalTokenCount': 3935, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1936}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 's1G9aJmxFoXlvdIP2di-gQ4'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21899,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:35:00Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as no remote access is stated, assuming on-site HMI access. VUL=2 based on explicit 'proof of concept' maturity. IMP=3 as password retrieval implies loss of UI control/visibility, but no specific process outage or safety impact is described.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17170,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:35:17Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 because connectivity is not explicitly remote (e.g., internet/VPN), defaulting to local. VUL=2 based on 'known exploitable weakness', which implies a confirmed vulnerability without evidence of active exploitation. IMP=3 as session hijacking on an HMI directly impacts visibility/UI, with no explicit process stop or safety hazard mentioned.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16342,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:35:36Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1941, 'totalTokenCount': 3940, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1941}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': '6FG9aJ_TN_jsxN8PndnvuAw'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18496,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:35:53Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2: 'Networking' implies local connectivity without explicit remote cues. VUL=2: '",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17157,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:36:10Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as 'networking' implies local network, not remote, per anti-inflation rule. VUL=2 based on 'proof of concept' maturity. IMP=1 as no operational, process, or safety impact is described, following the lowest risk tie-break rule for missing evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16607,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:36:27Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as connectivity is assumed local/on-site; no explicit remote access (internet/VPN) is mentioned. VUL=2 based on 'known exploitable weakness' cue, implying a confirmed vulnerability without active exploitation. IMP=1 as no operational effect on the process, safety, or visibility is described in the scenario.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16152,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:36:45Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as bootloader attacks require local/physical access; no remote cues provided. VUL=2 based on 'observed adversarial technique' matching the 'observed TTP' cue. IMP",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17837,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:37:02Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is explicitly stated, defaulting to local. VUL=2 based on 'known exploitable weakness' cue, indicating a confirmed vulnerability without active exploitation. IMP=1 due to a complete lack of evidence for any operational, process, or safety consequences in the scenario text.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16410,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:37:18Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 due to no explicit remote connectivity, defaulting to local. VUL=3 based on 'observed adversarial behavior' and 'unpatchable' status, indicating active exploitation without mitigation. IMP=1 as no operational or safety impact was described, defaulting to the lowest level per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15305,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:37:35Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as no remote access is stated; firmware updates imply a local/on-site connection. VUL=2 based on the explicit 'proof of concept' maturity. IMP=3 as a compromised HMI directly impacts operator visibility/guidance, with no evidence for higher process or safety consequences.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16024,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:37:53Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as HMI implies local/",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17622,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:38:10Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17206,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:38:28Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated (defaulting to local). VUL=2 based on 'observed adversarial technique' cue. IMP=1 as no operational effect (safety, process, or UI loss) is mentioned in the scenario, requiring the lowest impact score per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16978,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:38:46Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote connectivity is stated, defaulting to local. VUL=2 based on the explicit 'proof of concept' maturity. IMP=1 as no operational, process, or safety impact is described, defaulting to the lowest impact per uncertainty rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17726,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:39:04Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1936, 'totalTokenCount': 3935, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1936}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'uVK9aNaNHIjXvdIPwbHTgA4'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17480,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:39:22Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as no remote access is stated, assuming on-site HMI access. VUL=2 based on explicit 'proof of concept' maturity. IMP=3 as password retrieval implies loss of UI control/visibility, but no specific process outage or safety impact is described.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17030,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:39:38Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 because connectivity is not explicitly remote (e.g., internet/VPN), defaulting to local. VUL=2 based on 'known exploitable weakness', which implies a confirmed vulnerability without evidence of active exploitation. IMP=3 as session hijacking on an HMI directly impacts visibility/UI, with no explicit process stop or safety hazard mentioned.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16279,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:39:59Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 2,\n    \"vulnerability\": 2,\n    \"exposure\": 1\n  },\n  \"risk_raw\": 2,\n  \"justification\": \"No remote connectivity is stated, defaulting to isolated/air-gapped per anti-inflation rules (EXP=1). 'Known exploitable weakness' maps to a confirmed vulnerability or PoC (VUL=2). The scenario does not describe any operational consequences for a cryptographic side-channel attack, defaulting to no effect (IMP=1).\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 1,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 2,\n    \"likelihood_clamped\": 2,\n    \"risk_raw\": 2\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 20266,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:40:16Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"threat\",\n  \"risk\": 3,\n  \"ilve\": {\n    \"impact\": 3,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 9,\n  \"justification\": \"EXP=2 as 'networking' is mentioned but not explicitly remote. VUL=2 based on 'observed adversarial technique'. IMP=3 as HMI implies UI/visibility impact, but no process outage or safety hazard is stated.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 3,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 9\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16224,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:40:34Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as 'networking' implies on-site access but lacks explicit remote cues per anti-inflation rule. VUL=2 due to 'proof of concept' maturity. IMP=2 as a cryptographic side-channel attack implies information disclosure (minor inconvenience) with no stated process or safety effect. No mitigations mentioned.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17482,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:40:51Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not explicit (local assumed). VUL=2 for 'known exploitable weakness' cue. IMP=1 as no operational effect is described, following the lowest risk tie-break rule for missing evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17009,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:41:06Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local. VUL=2 based on 'known exploitable weakness' cue, indicating a confirmed vulnerability without evidence of active exploitation. IMP=1 as no operational or safety impact is described, requiring the lowest default impact per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 14418,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:41:21Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not stated (local assumed). VUL=2 for 'known exploitable weakness' cue. IMP=1 as no operational, process, or safety consequences are mentioned in the scenario, defaulting to the lowest impact per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 14591,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:41:41Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1938, 'totalTokenCount': 3937, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1938}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'VlO9aPLGLeXxnsEP8Z_QWA'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19444,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:42:01Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1940, 'totalTokenCount': 3939, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1940}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'alO9aJGBJYbPnsEPt9u8-Qs'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19350,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:42:20Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as no remote access is stated, implying local access for firmware management. VUL=3 due to 'observed adversarial behavior' indicating active use by adversaries. IMP=1 as the scenario describes a capability (rollback) with no specified operational, process, or safety consequence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18453,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:42:36Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as no remote access is stated, assuming local access for logs. VUL=2 based on 'known exploitable weakness' cue, which is less than active exploitation. IMP=2 as leaking information in logs is a diagnostic issue with no specified operational impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15600,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:42:53Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not stated (local assumed). VUL=2 based on 'proof of concept' maturity. IMP=1 as no operational effect (process/safety) is described in the scenario; choosing the lowest risk option per rules for ambiguity.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16463,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:43:10Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is specified, defaulting to local. VUL=2 based on 'observed adversarial technique' cue. IMP=1 as 'Code Overwritten to Avoid Detection' describes a stealth method with no explicit operational or process impact stated in the scenario.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16333,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:43:24Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 2,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=3 based on explicit cue 'Remotely Accessible'. VUL=2 due to 'observed adversarial technique' maturity. IMP=1 as the scenario provides no evidence of any operational, process, or safety impact, defaulting to the lowest value per rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 13265,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:43:41Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local. VUL=2 based on explicit 'proof of concept' cue. IMP=1 as password retrieval alone has no described operational effect on the process, per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17010,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:44:00Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1941, 'totalTokenCount': 3940, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1941}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': '4FO9aMSFO6-nnsEPyrC6wAs'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17729,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:44:17Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not explicitly stated, defaulting to local. VUL=2 based on the explicit 'proof of concept' maturity. IMP=1 as no operational, process, or safety impact is mentioned, defaulting to the lowest value per anti-inflation and uncertainty rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17258,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:44:37Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1935, 'totalTokenCount': 3934, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1935}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'BVS9aK6UPNu5nsEP3qbZmQ8'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18732,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:44:54Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as no remote access is stated (local assumed). VUL=2 based on 'known exploitable weakness' cue, implying a confirmed vulnerability without active exploitation. IMP=2 as no process or safety impact is described; improper password storage defaults to a lower impact like diagnostic access without further evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16685,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:45:11Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as 'networking' implies local connectivity but lacks explicit remote cues. VUL=2 based on 'observed adversarial technique' matching the observed TTP criteria. IMP=2 as unencrypted data communication is an information disclosure issue with no stated process or safety consequences, aligning with diagnostics/minor inconvenience.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16586,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:45:30Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1935, 'totalTokenCount': 3934, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1935}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'O1S9aISLKIPokdUPvOq3yQs'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18894,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:45:47Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 2,\n    \"vulnerability\": 2,\n    \"exposure\": 1\n  },\n  \"risk_raw\": 2,\n  \"justification\": \"EXP=1: No remote connectivity is stated; defaulting to the lowest exposure per tie-breaker rules. VUL=2: 'known exploitable weakness' indicates a confirmed vulnerability but not active exploitation. IMP=1: The scenario describes a technical vulnerability without any mention of operational, process, or safety impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 1,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 2,\n    \"likelihood_clamped\": 2,\n    \"risk_raw\": 2\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15856,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:46:04Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local. VUL=3 due to 'observed adversarial behavior' and being 'unpatchable', indicating active exploitation without mitigation. IMP=1 as no operational, safety, or UI consequences are mentioned in the scenario, defaulting to the lowest impact per anti-inflation rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16886,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:46:22Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as no remote access is stated, defaulting to local/on-site. VUL=2 based on the explicit 'proof of concept' maturity. IMP=1 as extracting secrets has no specified operational consequence in the scenario; it is an information disclosure vulnerability without a direct process or safety effect.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  ",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17678,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:46:40Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1937, 'totalTokenCount': 3936, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1937}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'gVS9aMPZMsWD7M8PgtrIiAw'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17738,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:46:58Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as no remote access is stated (default to local). VUL=2 based on 'known exploitable weakness' cue, implying a confirmed vulnerability without active exploitation. IMP=2 as leaking information in logs is a diagnostic/security finding without direct operational or safety consequences.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 2,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 6\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 16697,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:47:16Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not specified, defaulting to local. VUL=2 based on explicit 'proof of concept' maturity. IMP=1 as no operational or safety consequences are mentioned, defaulting to the lowest impact per tie-break rules.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17740,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:47:34Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=2 because no remote access was explicitly stated, defaulting to local. VUL=3 based on 'observed adversarial technique' cue, indicating active exploitation. IMP=1 because the scenario describes a stealth technique ('avoid detection') with no explicit evidence of safety, process, or visibility impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17730,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:47:48Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 4,\n    \"vulnerability\": 2,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 4,\n  \"justification\": \"EXP=3 due to explicit 'Remotely Accessible' cue. VUL=2 based on 'observed adversarial technique' matching the 'observed TTP' rule. IMP=1 as no operational effect is mentioned, following the anti-inflation and tie-break rules for missing evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"risk_raw\": 4\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 13765,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:48:04Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 1,\n  \"ilve\": {\n    \"impact\": 1,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 3,\n  \"justification\": \"EXP=2 as remote access is not specified, defaulting to local/on-site. VUL=2 based on the explicit 'proof of concept' maturity. IMP=1 as no operational, process, or safety impact is mentioned in the scenario; the consequence of password retrieval is undefined.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 2,\n    \"impact\": 1,\n    \"likelihood_raw\": 3,\n    \"likelihood_clamped\": 3,\n    \"risk_raw\": 3\n  }\n}\n```",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15210,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:48:22Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2 as remote access is not explicitly stated, defaulting to local network. VUL=2 based on 'known exploitable weakness' implying a reliable PoC, not active exploitation. IMP=2 as XSS on a PLC UI without further details constitutes a minor inconvenience, not a direct process impact, per tie-break rules.\",\n  ",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17686,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:48:41Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "```json\n{\n  \"variant\": \"benign\",\n  \"risk\": 2,\n  \"ilve\": {\n    \"impact\": 2,\n    \"likelihood\": 3,\n    \"vulnerability\": 2,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 6,\n  \"justification\": \"EXP=2: No explicit remote access stated; HTTP implies network but defaults to local/on-site per anti-inflation rules. VUL=2: Based on explicit 'proof of concept'",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18223,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:49:00Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1935, 'totalTokenCount': 3934, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1935}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'DVW9aI7qAa7hnsEPltCImQw'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18107,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:49:19Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1936, 'totalTokenCount': 3935, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1936}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'IFW9aK3zFs_XvdIPrpjSiAc'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18845,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "prompt_id": "P3",
+      "run_index": 0,
+      "timestamp_utc": "2025-09-07T09:49:38Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 1936, 'totalTokenCount': 3935, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 1936}], 'thoughtsTokenCount': 1999}, 'modelVersion': 'gemini-2.5-pro', 'responseId': 'M1W9aJD0H5mD7M8P1Y7t8As'}",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 18640,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "http_status": 200
+    }
+  }
+]

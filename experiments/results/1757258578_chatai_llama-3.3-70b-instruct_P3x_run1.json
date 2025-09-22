@@ -1,0 +1,4225 @@
+[
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:05Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial technique, malicious driver installable \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Observed adversarial technique, malicious driver installable \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6585,
+      "tokens_in": 706,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:13Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Untrusted program access to OS functions, proof of concept \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Untrusted program access to OS functions, proof of concept \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6620,
+      "tokens_in": 705,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:20Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6578,
+      "tokens_in": 703,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:28Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site access required, PoC available for shared secrets extraction \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site access required, PoC available for shared secrets extraction \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6851,
+      "tokens_in": 704,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:36Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site access required, PoC available, visibility/UI loss possible \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site access required, PoC available, visibility/UI loss possible \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6776,
+      "tokens_in": 704,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:23:43Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=2, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=2, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6690,
+      "tokens_in": 702,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:24:14Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Rootkit susceptible OS, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Rootkit susceptible OS, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 29801,
+      "tokens_in": 705,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:24:23Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 3,\n    \"impact\": 5\n  },\n  \"justification\": \"Unpatchable HW Root of Trust, known exploitable weakness \u2192 EXP=2, VUL=3, IMP=5.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 3,
+          "impact": 5
+        },
+        "justification": "Unpatchable HW Root of Trust, known exploitable weakness \u2192 EXP=2, VUL=3, IMP=5."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7652,
+      "tokens_in": 704,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:24:31Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Leaking security info, known weakness, no public exploit \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Leaking security info, known weakness, no public exploit \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6739,
+      "tokens_in": 703,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:24:38Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Observed adversarial technique, application software modified \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Observed adversarial technique, application software modified \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6792,
+      "tokens_in": 701,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:25:06Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial technique, code overwritten, implies active exploitation \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Observed adversarial technique, code overwritten, implies active exploitation \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 26917,
+      "tokens_in": 703,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:25:14Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Internet-exposed, known exploitable weakness, process outage risk \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Internet-exposed, known exploitable weakness, process outage risk \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6807,
+      "tokens_in": 704,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:25:22Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HTTP Injection/Response Splitting, proof of concept \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HTTP Injection/Response Splitting, proof of concept \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6790,
+      "tokens_in": 702,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:25:30Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site device with known exploitable weakness and potential UI loss \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site device with known exploitable weakness and potential UI loss \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6916,
+      "tokens_in": 701,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:25:37Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6550,
+      "tokens_in": 700,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:08Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial technique, malicious driver installable \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Observed adversarial technique, malicious driver installable \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 29777,
+      "tokens_in": 706,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:16Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Untrusted programs access privileged OS, PoC available \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Untrusted programs access privileged OS, PoC available \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6818,
+      "tokens_in": 705,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:24Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 3, \"impact\": 4 },\n  \"justification\": \"Unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=3, VUL=3, IMP=4.\"",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 3 column 107 (char 170)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6511,
+      "tokens_in": 703,
+      "tokens_out": 58,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:31Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site access required, PoC available for shared secrets extraction \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site access required, PoC available for shared secrets extraction \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6830,
+      "tokens_in": 704,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:39Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site access, PoC available for secrets extraction \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site access, PoC available for secrets extraction \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6608,
+      "tokens_in": 704,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:47Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=2, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=2, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7150,
+      "tokens_in": 702,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:26:55Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Rootkit susceptibility, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Rootkit susceptibility, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6512,
+      "tokens_in": 705,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 3,\n    \"impact\": 5\n  },\n  \"justification\": \"Unpatchable Hardware Root of Trust, known exploitable weakness \u2192 EXP=2, VUL=3, IMP=5.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 3,
+          "impact": 5
+        },
+        "justification": "Unpatchable Hardware Root of Trust, known exploitable weakness \u2192 EXP=2, VUL=3, IMP=5."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7348,
+      "tokens_in": 704,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:11Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Leaking security info, known weakness, no direct safety hazard \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Leaking security info, known weakness, no direct safety hazard \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7035,
+      "tokens_in": 703,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:19Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Observed adversarial technique, application software modification \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Observed adversarial technique, application software modification \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6606,
+      "tokens_in": 701,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:27Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Code overwritten, observed adversarial technique, potential process outage \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Code overwritten, observed adversarial technique, potential process outage \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6892,
+      "tokens_in": 703,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:47Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness, authentication bypass possible \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness, authentication bypass possible \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19628,
+      "tokens_in": 704,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:27:55Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HTTP Injection/Response Splitting, proof of concept \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HTTP Injection/Response Splitting, proof of concept \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6669,
+      "tokens_in": 702,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site device with known exploitable weakness, improper password storage \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site device with known exploitable weakness, improper password storage \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6999,
+      "tokens_in": 701,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:10Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6405,
+      "tokens_in": 700,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:33Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI, observed adversarial technique, UI loss possible \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI, observed adversarial technique, UI loss possible \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21452,
+      "tokens_in": 707,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:40Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"Known exploitable weakness in HMI system software \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Known exploitable weakness in HMI system software \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6563,
+      "tokens_in": 706,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:49Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI with unpatchable vulnerabilities and observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with unpatchable vulnerabilities and observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7231,
+      "tokens_in": 705,
+      "tokens_out": 69,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:28:56Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Unencrypted updates, PoC available \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Unencrypted updates, PoC available \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6375,
+      "tokens_in": 704,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:29:04Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI with observed adversarial behavior and firmware rollback vulnerability \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with observed adversarial behavior and firmware rollback vulnerability \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7297,
+      "tokens_in": 704,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:29:12Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"Unpatchable weakness, on-site HMI access \u2192 EXP=2, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Unpatchable weakness, on-site HMI access \u2192 EXP=2, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6568,
+      "tokens_in": 706,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:29:43Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI with observed adversarial technique, application software modification \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with observed adversarial technique, application software modification \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 30419,
+      "tokens_in": 703,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:29:51Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Sandboxed environment escaped, PoC available \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Sandboxed environment escaped, PoC available \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6571,
+      "tokens_in": 704,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:29:58Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 2, \"vulnerability\": 2, \"impact\": 3 },\n  \"justification\": \"On-site HMI with default credentials and observed adversarial technique \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with default credentials and observed adversarial technique \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6451,
+      "tokens_in": 701,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:30:16Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 2, \"impact\": 3 },\n  \"justification\": \"HMI software with PoC exploit and potential UI loss \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI software with PoC exploit and potential UI loss \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 17025,
+      "tokens_in": 705,
+      "tokens_out": 61,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:30:27Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"HTTP session hijacking, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "HTTP session hijacking, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9491,
+      "tokens_in": 704,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:30:34Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"Known exploitable weakness in HMI software \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Known exploitable weakness in HMI software \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6394,
+      "tokens_in": 705,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:30:57Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HMI with unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI with unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21607,
+      "tokens_in": 702,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:05Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HMI with cryptographic protocol side channel, PoC available \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI with cryptographic protocol side channel, PoC available \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6763,
+      "tokens_in": 702,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:12Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 3, \"impact\": 3 },\n  \"justification\": \"Known exploitable weakness in HMI networking with weak crypto \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Known exploitable weakness in HMI networking with weak crypto \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6418,
+      "tokens_in": 705,
+      "tokens_out": 61,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:20Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI, observed adversarial technique, visibility/UI loss possible \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI, observed adversarial technique, visibility/UI loss possible \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7113,
+      "tokens_in": 707,
+      "tokens_out": 69,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:28Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 3, \"impact\": 3 },\n  \"justification\": \"Exploitable system network stack, known weakness \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Exploitable system network stack, known weakness \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6491,
+      "tokens_in": 706,
+      "tokens_out": 59,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:36Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 2, \"vulnerability\": 2, \"impact\": 3 },\n  \"justification\": \"On-site HMI with unpatchable vulnerabilities and observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with unpatchable vulnerabilities and observed adversarial behavior \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6666,
+      "tokens_in": 705,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:31:43Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Unencrypted updates, PoC available \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Unencrypted updates, PoC available \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6551,
+      "tokens_in": 704,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:32:10Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI with observed adversarial behavior and possible UI loss \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with observed adversarial behavior and possible UI loss \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 26085,
+      "tokens_in": 704,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:32:18Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"Unpatchable hardware weakness, on-site HMI access \u2192 EXP=2, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Unpatchable hardware weakness, on-site HMI access \u2192 EXP=2, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7046,
+      "tokens_in": 706,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:32:26Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI, observed adversarial technique, UI loss possible \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI, observed adversarial technique, UI loss possible \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7083,
+      "tokens_in": 703,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:32:34Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"Sandboxed environment escaped, PoC available \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "Sandboxed environment escaped, PoC available \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6806,
+      "tokens_in": 704,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:32:56Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"On-site HMI with default creds, observed TTP \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "On-site HMI with default creds, observed TTP \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 20575,
+      "tokens_in": 701,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:03Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 2, \"impact\": 3 },\n  \"justification\": \"HMI software with password retrieval abuse, PoC available \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI software with password retrieval abuse, PoC available \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6508,
+      "tokens_in": 705,
+      "tokens_out": 61,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:11Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"HTTP session hijacking, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "HTTP session hijacking, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6857,
+      "tokens_in": 704,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:19Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"HMI software with known exploitable weakness and side-channel vulnerability \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "HMI software with known exploitable weakness and side-channel vulnerability \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6996,
+      "tokens_in": 705,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:35Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HMI with unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI with unauthorized messages, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 15045,
+      "tokens_in": 702,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:43Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"HMI networking vulnerability with PoC, potential UI loss \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "HMI networking vulnerability with PoC, potential UI loss \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6828,
+      "tokens_in": 702,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:50Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 3, \"impact\": 3 },\n  \"justification\": \"Known exploitable weakness in HMI networking with weak crypto \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "Known exploitable weakness in HMI networking with weak crypto \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6296,
+      "tokens_in": 705,
+      "tokens_out": 61,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:33:58Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness, container escape \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness, container escape \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6548,
+      "tokens_in": 699,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:34:06Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness in PLC software, VPN reachable, process outage risk \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness in PLC software, VPN reachable, process outage risk \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6963,
+      "tokens_in": 700,
+      "tokens_out": 69,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:34:14Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \n    \"exposure\": 3, \n    \"vulnerability\": 3, \n    \"impact\": 4 \n  },\n  \"justification\": \"VPN likely reachable, unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "VPN likely reachable, unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7427,
+      "tokens_in": 703,
+      "tokens_out": 71,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:34:45Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"VPN/IT reachable, PoC available for secrets extraction \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "VPN/IT reachable, PoC available for secrets extraction \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 29648,
+      "tokens_in": 704,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:34:53Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Observed adversarial behavior, firmware update rollbacks allowed \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6876,
+      "tokens_in": 702,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:01Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 3\n  },\n  \"justification\": \"PLC leaks security info, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 3
+        },
+        "justification": "PLC leaks security info, known exploitable weakness \u2192 EXP=3, VUL=3, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6820,
+      "tokens_in": 703,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:09Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"PLC on-site, PoC available, visibility/UI loss \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "PLC on-site, PoC available, visibility/UI loss \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6936,
+      "tokens_in": 702,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:16Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"VPN likely reachable, observed adversarial technique, process outage risk \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "VPN likely reachable, observed adversarial technique, process outage risk \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6899,
+      "tokens_in": 703,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:42Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Remotely accessible, unauthenticated services with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Remotely accessible, unauthenticated services with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 24431,
+      "tokens_in": 705,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:49Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 2, \"impact\": 4 },\n  \"justification\": \"PLC software vulnerable to password retrieval abuse with PoC available \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "PLC software vulnerable to password retrieval abuse with PoC available \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6428,
+      "tokens_in": 703,
+      "tokens_out": 62,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:35:57Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"PLC software with known XSS exploit and potential actuator control \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "PLC software with known XSS exploit and potential actuator control \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7137,
+      "tokens_in": 705,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:36:05Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"HTTP Injection/Response Splitting with PoC available \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "HTTP Injection/Response Splitting with PoC available \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6853,
+      "tokens_in": 702,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:36:13Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Observed adversarial technique, hardcoded credentials \u2192 EXP=2, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Observed adversarial technique, hardcoded credentials \u2192 EXP=2, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6583,
+      "tokens_in": 700,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:36:21Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness in PLC software with improper password storage \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness in PLC software with improper password storage \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6747,
+      "tokens_in": 701,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:36:28Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Unencrypted data, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Unencrypted data, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6600,
+      "tokens_in": 702,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T15:36:36Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness in PLC software with potential for container escape \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness in PLC software with potential for container escape \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6969,
+      "tokens_in": 699,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:06Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"VPN reachable, known exploitable weakness, process outage risk \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "VPN reachable, known exploitable weakness, process outage risk \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 1408358,
+      "tokens_in": 700,
+      "tokens_out": 66,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:13Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 3, \"impact\": 4 },\n  \"justification\": \"Unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Unpatchable vulnerabilities with observed adversarial behavior \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6430,
+      "tokens_in": 703,
+      "tokens_out": 59,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:21Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"PLC software vulnerability with PoC available and potential process outage risk \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "PLC software vulnerability with PoC available and potential process outage risk \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7303,
+      "tokens_in": 704,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:30Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"PLC firmware update rollbacks allowed with observed adversarial behavior \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "PLC firmware update rollbacks allowed with observed adversarial behavior \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7179,
+      "tokens_in": 702,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:38Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"PLC leaks security info, known weakness \u2192 EXP=3, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "PLC leaks security info, known weakness \u2192 EXP=3, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6936,
+      "tokens_in": 703,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:45Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 2,\n    \"vulnerability\": 2,\n    \"impact\": 3\n  },\n  \"justification\": \"PLC with PoC exploit, inconsistent code \u2192 EXP=2, VUL=2, IMP=3.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 2,
+          "vulnerability": 2,
+          "impact": 3
+        },
+        "justification": "PLC with PoC exploit, inconsistent code \u2192 EXP=2, VUL=2, IMP=3."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6904,
+      "tokens_in": 702,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:00:54Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"PLC software code overwritten, observed adversarial technique \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "PLC software code overwritten, observed adversarial technique \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7207,
+      "tokens_in": 703,
+      "tokens_out": 65,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:02Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Remotely accessible, unauthenticated services with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Remotely accessible, unauthenticated services with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7275,
+      "tokens_in": 705,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:09Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": { \"exposure\": 3, \"vulnerability\": 2, \"impact\": 4 },\n  \"justification\": \"PLC with password retrieval mechanism abused, PoC available \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "PLC with password retrieval mechanism abused, PoC available \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6468,
+      "tokens_in": 703,
+      "tokens_out": 61,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:17Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"PLC software with known exploitable XSS weakness \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "PLC software with known exploitable XSS weakness \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6766,
+      "tokens_in": 705,
+      "tokens_out": 64,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:25Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"HTTP Injection/Response Splitting with PoC, potential process outage \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "HTTP Injection/Response Splitting with PoC, potential process outage \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7252,
+      "tokens_in": 702,
+      "tokens_out": 68,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:33Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Hardcoded credentials with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Hardcoded credentials with observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6844,
+      "tokens_in": 700,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:41Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 3,\n    \"impact\": 4\n  },\n  \"justification\": \"Known exploitable weakness in PLC software with potential actuator control \u2192 EXP=3, VUL=3, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 3,
+          "impact": 4
+        },
+        "justification": "Known exploitable weakness in PLC software with potential actuator control \u2192 EXP=3, VUL=3, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 7046,
+      "tokens_in": 701,
+      "tokens_out": 67,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P3x",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T16:01:49Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"ilve\": {\n    \"exposure\": 3,\n    \"vulnerability\": 2,\n    \"impact\": 4\n  },\n  \"justification\": \"Unencrypted data, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4.\"\n}",
+      "parsed": {
+        "ilve": {
+          "exposure": 3,
+          "vulnerability": 2,
+          "impact": 4
+        },
+        "justification": "Unencrypted data, observed adversarial technique \u2192 EXP=3, VUL=2, IMP=4."
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 6563,
+      "tokens_in": 702,
+      "tokens_out": 63,
+      "http_status": 200
+    }
+  }
+]

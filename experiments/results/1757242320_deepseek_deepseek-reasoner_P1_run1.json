@@ -1,0 +1,3734 @@
+[
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T10:53:44Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103886,
+      "tokens_in": 554,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T10:55:19Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Untrusted programs accessing privileged OS functions indicate a security threat with high impact due to potential system compromise. Proof of concept maturity suggests lower immediate risk but vulnerability is present.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 4,
+          "exposure": 3
+        },
+        "risk_raw": 25,
+        "justification": "Untrusted programs accessing privileged OS functions indicate a security threat with high impact due to potential system compromise. Proof of concept maturity suggests lower immediate risk but vulnerability is present.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 3,
+          "vul": 4,
+          "likelihood_raw": 6,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94331,
+      "tokens_in": 554,
+      "tokens_out": 1850,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T10:56:59Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable vulnerabilities in DRIVE system software with observed adversarial behavior indicate high threat, severe impact, and high likelihood from exposure and vulnerability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable vulnerabilities in DRIVE system software with observed adversarial behavior indicate high threat, severe impact, and high likelihood from exposure and vulnerability.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 100108,
+      "tokens_in": 551,
+      "tokens_out": 1972,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T10:58:44Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 104103,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:00:27Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102945,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:02:09Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101700,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:03:54Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103983,
+      "tokens_in": 554,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:05:36Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101201,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:07:19Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103008,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:09:02Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102324,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:10:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102334,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:12:02Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Authentication bypass from certificate flaw in DRIVE software per EMB3D known exploitable weakness, high OT impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 4
+        },
+        "risk_raw": 25,
+        "justification": "Authentication bypass from certificate flaw in DRIVE software per EMB3D known exploitable weakness, high OT impact.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 5,
+          "likelihood_raw": 8,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 77096,
+      "tokens_in": 555,
+      "tokens_out": 1502,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:13:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP injection in DRIVE software enables response splitting attacks, posing threat to OT systems per EMB3D evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }\n",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 23 column 1 (char 521)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102426,
+      "tokens_in": 551,
+      "tokens_out": 1999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:15:28Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101990,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:17:12Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103490,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:18:55Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102326,
+      "tokens_in": 554,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:20:38Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102415,
+      "tokens_in": 554,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:22:25Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 106462,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:24:07Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102085,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:25:50Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102503,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:27:37Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 105979,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:29:20Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102806,
+      "tokens_in": 554,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:31:02Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101497,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:32:46Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103335,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:34:31Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 104908,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:36:15Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102833,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:37:57Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101791,
+      "tokens_in": 555,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:39:41Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103170,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:41:24Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102741,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:43:07Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102409,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:44:50Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102308,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:46:30Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Exploitable network stack weakness in HMI software indicates high vulnerability and exposure, leading to severe impact and likelihood of exploitation.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 20 column 14 (char 528)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 100367,
+      "tokens_in": 553,
+      "tokens_out": 1999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:48:12Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101125,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:49:56Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103366,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:51:39Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102203,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:53:21Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101443,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:55:03Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101658,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:56:28Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Sandbox escape scenario indicates a threat with high impact due to potential HMI control compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 4,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 4,
+          "exposure": 2
+        },
+        "risk_raw": 25,
+        "justification": "Sandbox escape scenario indicates a threat with high impact due to potential HMI control compromise.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 2,
+          "vul": 4,
+          "likelihood_raw": 5,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 84403,
+      "tokens_in": 551,
+      "tokens_out": 1691,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:58:10Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102059,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T11:59:52Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101197,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:01:34Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Known exploitable weakness in application software allows session hijacking, leading to high impact on HMI control.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 13 column 61 (char 375)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101466,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:03:16Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101770,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:04:53Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unauthorized messages or connections in HMI indicate high threat impact due to potential control loss, per EMB3D TID-406 networking category and observed technique.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 4,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 4,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unauthorized messages or connections in HMI indicate high threat impact due to potential control loss, per EMB3D TID-406 networking category and observed technique.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 4,
+          "likelihood_raw": 8,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96296,
+      "tokens_in": 550,
+      "tokens_out": 1876,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:06:35Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101439,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:08:17Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101845,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:09:59Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101554,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:11:41Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 100970,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:13:26Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 104832,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:15:09Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102425,
+      "tokens_in": 552,
+      "tokens_out": 1999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:16:51Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101155,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:18:31Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 99359,
+      "tokens_in": 553,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:20:12Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101132,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:21:52Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 99386,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:23:31Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98648,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:25:07Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95608,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:26:43Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95400,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:28:19Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95317,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:29:56Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96156,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:31:33Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96510,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:33:11Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 97590,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:34:49Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 97137,
+      "tokens_in": 546,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:36:25Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96365,
+      "tokens_in": 547,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:38:06Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 99534,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:39:44Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98017,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:41:23Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98507,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:43:02Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98422,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:44:41Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98350,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:46:18Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96683,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:47:54Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95312,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:49:30Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95650,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:51:06Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95718,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:52:41Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP injection on PLC can compromise control systems; proof-of-concept maturity indicates active development but not widespread exploitation yet. High impact potential.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }\n}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 5,
+          "vulnerability": 3,
+          "exposure": 3
+        },
+        "risk_raw": 20,
+        "justification": "HTTP injection on PLC can compromise control systems; proof-of-concept maturity indicates active development but not widespread exploitation yet. High impact potential.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 3,
+          "vul": 3,
+          "likelihood_raw": 5,
+          "likelihood_clamped": 5,
+          "impact": 4,
+          "risk_raw": 20
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94398,
+      "tokens_in": 549,
+      "tokens_out": 1916,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:54:20Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 97921,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:55:56Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95890,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:57:33Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96800,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T12:59:10Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96278,
+      "tokens_in": 546,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:00:47Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96857,
+      "tokens_in": 547,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:02:23Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95504,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:03:59Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94793,
+      "tokens_in": 551,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:05:35Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95398,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:07:12Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 97004,
+      "tokens_in": 550,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:08:49Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96404,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:10:25Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95770,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:12:04Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98337,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:13:40Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94959,
+      "tokens_in": 549,
+      "tokens_out": 1999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:15:15Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94973,
+      "tokens_in": 552,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:16:50Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 94684,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:18:27Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 95731,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:20:03Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96075,
+      "tokens_in": 548,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-07T13:21:40Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 96302,
+      "tokens_in": 549,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  }
+]

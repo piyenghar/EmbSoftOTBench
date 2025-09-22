@@ -1,0 +1,5582 @@
+[
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:01:47Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Malicious OS Kernel Driver installable\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Malicious OS Kernel Driver installable",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12435,
+      "tokens_in": 519,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:02:01Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Untrusted programs access privileged OS functions\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Untrusted programs access privileged OS functions",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 13192,
+      "tokens_in": 518,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:02:14Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 5, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Unpatchable vulnerabilities in DRIVE software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 5, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 5,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unpatchable vulnerabilities in DRIVE software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 5,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12169,
+      "tokens_in": 516,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:02:27Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"FW/SW update integrity compromised\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "FW/SW update integrity compromised",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12255,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:02:41Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Secrets extracted from device root of trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Secrets extracted from device root of trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12528,
+      "tokens_in": 517,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:03:08Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Firmware update rollbacks allowed\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 26287,
+      "tokens_in": 515,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:03:19Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":5,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Rootkit susceptible OS\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":5,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 5,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Rootkit susceptible OS",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 5,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 10333,
+      "tokens_in": 518,
+      "tokens_out": 94,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:03:33Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable Hardware Root of Trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable Hardware Root of Trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12555,
+      "tokens_in": 517,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:03:44Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Leaking security info in logs indicates high vulnerability\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Leaking security info in logs indicates high vulnerability",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 10079,
+      "tokens_in": 516,
+      "tokens_out": 99,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:03:57Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Modified applications binaries pose significant risk\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Modified applications binaries pose significant risk",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12071,
+      "tokens_in": 514,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:04:11Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 3, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Code overwritten to avoid detection\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 3, \"likelihood_raw\": 6, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 3,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Code overwritten to avoid detection",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 3,
+          "likelihood_raw": 6,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12486,
+      "tokens_in": 516,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:04:37Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Authentication bypass due to incorrect certificate verification\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Authentication bypass due to incorrect certificate verification",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 25654,
+      "tokens_in": 517,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:04:51Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"HTTP Injection/Response Splitting is a known threat\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "HTTP Injection/Response Splitting is a known threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12580,
+      "tokens_in": 515,
+      "tokens_out": 131,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:05:04Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Improper password storage\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Improper password storage",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12001,
+      "tokens_in": 514,
+      "tokens_out": 125,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:05:14Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Unauthorized messages or connections indicate a threat\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unauthorized messages or connections indicate a threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9437,
+      "tokens_in": 513,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:05:25Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Malicious OS kernel driver installable\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Malicious OS kernel driver installable",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9387,
+      "tokens_in": 519,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:05:35Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Untrusted programs access privileged OS functions\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Untrusted programs access privileged OS functions",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9260,
+      "tokens_in": 518,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:05:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":16,\"justification\":\"Unpatchable vulnerabilities in DRIVE software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":8,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 16,
+        "justification": "Unpatchable vulnerabilities in DRIVE software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 8,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9403,
+      "tokens_in": 516,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:06:11Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"FW/SW update integrity compromised\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "FW/SW update integrity compromised",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 24332,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:06:21Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":25,\"justification\":\"Secrets extracted from device root of trust\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":9,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Secrets extracted from device root of trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9618,
+      "tokens_in": 517,
+      "tokens_out": 98,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:06:32Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Firmware update rollbacks allowed, indicating high vulnerability and exposure\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed, indicating high vulnerability and exposure",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9922,
+      "tokens_in": 515,
+      "tokens_out": 102,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:07:05Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Rootkit susceptible OS\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Rootkit susceptible OS",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 31573,
+      "tokens_in": 518,
+      "tokens_out": 94,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:07:16Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":25,\"justification\":\"Unpatchable Hardware Root of Trust\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":9,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable Hardware Root of Trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9720,
+      "tokens_in": 517,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:07:42Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Device leaks security info\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Device leaks security info",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 25519,
+      "tokens_in": 516,
+      "tokens_out": 125,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:07:53Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Modified binaries indicate malicious intent\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Modified binaries indicate malicious intent",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9525,
+      "tokens_in": 514,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:08:07Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 3, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Code overwritten to avoid detection\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 3, \"likelihood_raw\": 6, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 3,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Code overwritten to avoid detection",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 3,
+          "likelihood_raw": 6,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 13314,
+      "tokens_in": 516,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:08:23Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Authentication bypass due to incorrect certificate verification\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Authentication bypass due to incorrect certificate verification",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 14728,
+      "tokens_in": 517,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:08:37Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"HTTP Injection/Response Splitting is a high-risk threat\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "HTTP Injection/Response Splitting is a high-risk threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12772,
+      "tokens_in": 515,
+      "tokens_out": 132,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:08:47Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Known exploitable weakness in DRIVE software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Known exploitable weakness in DRIVE software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9503,
+      "tokens_in": 514,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:08:58Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Unauthorized messages or connections indicate a threat\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unauthorized messages or connections indicate a threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9652,
+      "tokens_in": 513,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:09:08Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Inadequate Bootloader Protection and Verification\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Inadequate Bootloader Protection and Verification",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9542,
+      "tokens_in": 520,
+      "tokens_out": 98,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:09:21Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Exploitable system network stack component\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Exploitable system network stack component",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12069,
+      "tokens_in": 519,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:09:35Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable vulnerabilities in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable vulnerabilities in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12098,
+      "tokens_in": 518,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:09:45Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Unencrypted SW/FW Updates increases vulnerability\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unencrypted SW/FW Updates increases vulnerability",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9491,
+      "tokens_in": 517,
+      "tokens_out": 98,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:09:56Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Firmware update rollbacks allowed, enabling adversarial behavior\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed, enabling adversarial behavior",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9769,
+      "tokens_in": 517,
+      "tokens_out": 101,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:10:09Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable Hardware Root of Trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable Hardware Root of Trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12229,
+      "tokens_in": 519,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:10:19Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Modified HMI software binaries indicate high threat\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Modified HMI software binaries indicate high threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9364,
+      "tokens_in": 516,
+      "tokens_out": 98,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:10:30Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Sandboxed environments escaped\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Sandboxed environments escaped",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9287,
+      "tokens_in": 517,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:10:43Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Default credentials used\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Default credentials used",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 11821,
+      "tokens_in": 514,
+      "tokens_out": 124,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:12:27Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Password retrieval abused\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Password retrieval abused",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103366,
+      "tokens_in": 518,
+      "tokens_out": 124,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:15:45Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"HMI software session hijacking\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "HMI software session hijacking",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 197014,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:19:04Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Known exploitable weakness in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Known exploitable weakness in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 198413,
+      "tokens_in": 518,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:20:52Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 3, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Unauthorized messages threaten HMI\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 3, \"likelihood_raw\": 6, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 3,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unauthorized messages threaten HMI",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 3,
+          "likelihood_raw": 6,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 106903,
+      "tokens_in": 515,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:24:11Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Cryptographic protocol side channel vulnerability\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Cryptographic protocol side channel vulnerability",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 197414,
+      "tokens_in": 515,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:27:29Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 5, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Weak cryptographic protocol in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 5, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 5,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Weak cryptographic protocol in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 5,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 197074,
+      "tokens_in": 518,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:27:42Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Inadequate Bootloader Protection\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Inadequate Bootloader Protection",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12122,
+      "tokens_in": 520,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:27:53Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":5,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Exploitable system network stack component\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 5,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Exploitable system network stack component",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9759,
+      "tokens_in": 519,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:28:06Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable vulnerabilities in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable vulnerabilities in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12241,
+      "tokens_in": 518,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:28:19Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Unencrypted SW/FW Updates\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unencrypted SW/FW Updates",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12066,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:33:56Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Firmware update rollbacks allowed\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 336021,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:34:09Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable Hardware Root of Trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable Hardware Root of Trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12258,
+      "tokens_in": 519,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:34:32Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Modified HMI software binaries pose significant risk\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Modified HMI software binaries pose significant risk",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 21444,
+      "tokens_in": 516,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:35:38Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Sandboxed environments escaped\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Sandboxed environments escaped",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 65631,
+      "tokens_in": 517,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:35:52Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Default credentials used in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Default credentials used in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12328,
+      "tokens_in": 514,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:36:02Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Password retrieval mechanism abused\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Password retrieval mechanism abused",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9284,
+      "tokens_in": 518,
+      "tokens_out": 94,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:36:16Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"HMI software session hijacking\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "HMI software session hijacking",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12708,
+      "tokens_in": 517,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:36:45Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Cryptographic timing side-channel weakness in HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Cryptographic timing side-channel weakness in HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 28160,
+      "tokens_in": 518,
+      "tokens_out": 131,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:37:06Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Unauthorized messages threaten HMI\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unauthorized messages threaten HMI",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 19924,
+      "tokens_in": 515,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:37:19Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Side channel attack on HMI software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Side channel attack on HMI software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12474,
+      "tokens_in": 515,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:37:32Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Weak cryptographic protocol\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Weak cryptographic protocol",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12009,
+      "tokens_in": 518,
+      "tokens_out": 124,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:37:58Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Container Escape indicates high risk\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Container Escape indicates high risk",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 24973,
+      "tokens_in": 512,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:38:12Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Virtual Machine Escape indicates high risk\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Virtual Machine Escape indicates high risk",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12414,
+      "tokens_in": 513,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:38:25Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unpatchable device vulnerabilities\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable device vulnerabilities",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12091,
+      "tokens_in": 516,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:38:38Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Secrets extracted from device root of trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Secrets extracted from device root of trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12235,
+      "tokens_in": 517,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:38:52Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Firmware update rollbacks allowed\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12806,
+      "tokens_in": 515,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:39:05Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Leaks security info\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Leaks security info",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12153,
+      "tokens_in": 516,
+      "tokens_out": 124,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:39:18Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Inconsistent device code representations\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Inconsistent device code representations",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12085,
+      "tokens_in": 515,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:39:31Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Code overwritten to avoid detection\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Code overwritten to avoid detection",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12121,
+      "tokens_in": 516,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:39:53Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Unauthenticated services expose PLC software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unauthenticated services expose PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 20251,
+      "tokens_in": 518,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:40:03Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Password retrieval abused in PLC software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Password retrieval abused in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9508,
+      "tokens_in": 516,
+      "tokens_out": 96,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:40:16Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"XSS in PLC software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "XSS in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12121,
+      "tokens_in": 518,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:40:27Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"PLC software vulnerable to HTTP Injection/Response Splitting\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC software vulnerable to HTTP Injection/Response Splitting",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 10015,
+      "tokens_in": 515,
+      "tokens_out": 101,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:41:00Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Hardcoded credentials in PLC software\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Hardcoded credentials in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 31784,
+      "tokens_in": 513,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:41:26Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"PLC software improper password storage\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC software improper password storage",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 24729,
+      "tokens_in": 514,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:41:56Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Unencrypted sensitive data\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unencrypted sensitive data",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 29409,
+      "tokens_in": 515,
+      "tokens_out": 125,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:42:09Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"PLC software container escape\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC software container escape",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12029,
+      "tokens_in": 512,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:42:23Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 5, \"ilve\": {\"impact\": 5, \"likelihood\": 5, \"vulnerability\": 5, \"exposure\": 5}, \"risk_raw\": 25, \"justification\": \"Virtual Machine Escape indicates high risk\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 5, \"vul\": 5, \"likelihood_raw\": 9, \"likelihood_clamped\": 5, \"impact\": 5, \"risk_raw\": 25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Virtual Machine Escape indicates high risk",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12698,
+      "tokens_in": 513,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:42:34Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":25,\"justification\":\"Unpatchable vulnerabilities in PLC software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":9,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unpatchable vulnerabilities in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9343,
+      "tokens_in": 516,
+      "tokens_out": 97,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:43:06Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Secrets extracted from device root of trust\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Secrets extracted from device root of trust",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 31726,
+      "tokens_in": 517,
+      "tokens_out": 129,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:43:38Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Firmware update rollbacks allowed\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Firmware update rollbacks allowed",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 30661,
+      "tokens_in": 515,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:43:51Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Leaking security info in logs\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Leaking security info in logs",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12216,
+      "tokens_in": 516,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:44:04Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"Inconsistent device code representations\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Inconsistent device code representations",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12239,
+      "tokens_in": 515,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:44:38Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"PLC code overwritten to avoid detection\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC code overwritten to avoid detection",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 32850,
+      "tokens_in": 516,
+      "tokens_out": 128,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:44:49Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":25,\"justification\":\"Unauthenticated services expose PLC to remote attacks\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":9,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Unauthenticated services expose PLC to remote attacks",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9711,
+      "tokens_in": 518,
+      "tokens_out": 98,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:45:02Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"PLC password retrieval abused\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC password retrieval abused",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 11986,
+      "tokens_in": 516,
+      "tokens_out": 126,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:45:35Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"XSS in PLC software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "XSS in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 32132,
+      "tokens_in": 518,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:46:08Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"HTTP Injection/Response Splitting is a known threat\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "HTTP Injection/Response Splitting is a known threat",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 31741,
+      "tokens_in": 515,
+      "tokens_out": 131,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:46:42Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":5},\"risk_raw\":25,\"justification\":\"Hardcoded credentials in PLC software\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":5,\"vul\":5,\"likelihood_raw\":9,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 5
+        },
+        "risk_raw": 25,
+        "justification": "Hardcoded credentials in PLC software",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 5,
+          "vul": 5,
+          "likelihood_raw": 9,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 33280,
+      "tokens_in": 513,
+      "tokens_out": 96,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:46:55Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\": \"threat\", \"risk\": 4, \"ilve\": {\"impact\": 4, \"likelihood\": 4, \"vulnerability\": 4, \"exposure\": 4}, \"risk_raw\": 16, \"justification\": \"PLC software improper password storage\", \"rule_consistency\": {\"likelihood_equals_exposure_plus_vulnerability_minus_1\": true}, \"calc\": {\"exp\": 4, \"vul\": 4, \"likelihood_raw\": 7, \"likelihood_clamped\": 4, \"impact\": 4, \"risk_raw\": 16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "PLC software improper password storage",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 12115,
+      "tokens_in": 514,
+      "tokens_out": 127,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "chatai",
+      "model": "llama-3.3-70b-instruct",
+      "prompt_id": "P1",
+      "run_index": 2,
+      "timestamp_utc": "2025-09-07T13:47:06Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":4,\"ilve\":{\"impact\":4,\"likelihood\":4,\"vulnerability\":4,\"exposure\":4},\"risk_raw\":16,\"justification\":\"Unencrypted sensitive data communication\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":4,\"vul\":4,\"likelihood_raw\":7,\"likelihood_clamped\":4,\"impact\":4,\"risk_raw\":16}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 4,
+        "ilve": {
+          "impact": 4,
+          "likelihood": 4,
+          "vulnerability": 4,
+          "exposure": 4
+        },
+        "risk_raw": 16,
+        "justification": "Unencrypted sensitive data communication",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 4,
+          "vul": 4,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 4,
+          "impact": 4,
+          "risk_raw": 16
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 9247,
+      "tokens_in": 515,
+      "tokens_out": 95,
+      "http_status": 200
+    }
+  }
+]

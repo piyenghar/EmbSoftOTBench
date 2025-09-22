@@ -1,0 +1,3624 @@
+[
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:00:48Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Malicious OS kernel driver installation poses high risk due to direct system access, as per EMB3D evidence of observed adversarial technique.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 546)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 162923,
+      "tokens_in": 585,
+      "tokens_out": 3564,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:04:09Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Untrusted access to OS privileges indicates high impact threat; proof of concept suggests moderate vulnerability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 3,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 517)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 108545,
+      "tokens_in": 585,
+      "tokens_out": 2359,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:10:24Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable vulnerabilities with observed adversarial behavior indicate high threat likelihood and impact, leading to elevated risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 537)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 137205,
+      "tokens_in": 582,
+      "tokens_out": 2959,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:17:42Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"FW/SW update integrity shared secrets extraction per EMB3D proof of concept indicates threat with high impact and vulnerability, medium exposure.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 4,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 549)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 193628,
+      "tokens_in": 584,
+      "tokens_out": 4105,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:21:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Secrets extraction from root of trust indicates critical breach with high impact and likelihood due to proof-of-concept vulnerability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 18 column 22 (char 466)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 142757,
+      "tokens_in": 584,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:25:44Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Firmware update rollbacks allowed per EMB3D",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 11 column 20 (char 172)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 141472,
+      "tokens_in": 583,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:29:41Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Known exploitable weakness in system software makes DRIVE susceptible to rootkits, indicating high threat with critical impact and likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 547)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 139848,
+      "tokens_in": 585,
+      "tokens_out": 2865,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:36:26Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable hardware root of trust with known exploitable weakness indicates high risk of severe impacts in OT environments.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 529)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 161999,
+      "tokens_in": 584,
+      "tokens_out": 3377,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:43:06Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Device leaks security info in logs, a known exploitable weakness in system software, increasing risk of unauthorized access and compromise in OT environments.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 563)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 150778,
+      "tokens_in": 583,
+      "tokens_out": 3037,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:50:20Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Modification of DRIVE application binaries indicates malicious threat with high operational impact, per observed adversarial techniques.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 540)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 175168,
+      "tokens_in": 580,
+      "tokens_out": 3447,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:51:50Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Code overwritten to avoid detection per EMB3D scenario indicates adversarial threat with high impact and likelihood in OT drive systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 540)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 89973,
+      "tokens_in": 542,
+      "tokens_out": 1765,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T05:59:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 217016,
+      "tokens_in": 586,
+      "tokens_out": 4500,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:06:23Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP Injection/Response Splitting vulnerability in DRIVE software poses high risk in OT environments, with proof of concept maturity indicating developed but not fully deployed exploit.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 589)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 153035,
+      "tokens_in": 582,
+      "tokens_out": 3190,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:10:19Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Improper password storage in DRIVE software allows credential theft, leading to unauthorized access and high risk in OT due to known exploitable weakness.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 558)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 135133,
+      "tokens_in": 581,
+      "tokens_out": 2875,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:17:10Z"
+    },
+    "input": {
+      "uid": "DRIVE-benign-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unauthorized messages in DRIVE software indicate threat with high impact due to potential system compromise, based on observed adversarial technique in networking.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 568)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 178285,
+      "tokens_in": 581,
+      "tokens_out": 3985,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:21:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-203-0002",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-203",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Malicious OS Kernel Driver/Module Installable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Malicious OS kernel driver installation observed, indicating high impact and likelihood due to system-level access and adversarial technique.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 15 column 10 (char 422)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 138727,
+      "tokens_in": 585,
+      "tokens_out": 2999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:24:51Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-204-0003",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-204",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Untrusted Programs Can Access Privileged OS Functions \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Untrusted programs accessing privileged OS functions indicates a high-impact security threat with potential system compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 531)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 132561,
+      "tokens_in": 585,
+      "tokens_out": 2868,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:28:39Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-210-0009",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable vulnerabilities in system software with observed adversarial behavior indicate high exploitation risk and impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 21 column 19 (char 526)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 135535,
+      "tokens_in": 582,
+      "tokens_out": 2999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:29:51Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-212-0011",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-212",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: FW/SW Update Integrity Shared Secrets Extraction \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Proof of concept threat extracting shared secrets during updates compromises integrity, high impact and likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 519)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 72090,
+      "tokens_in": 544,
+      "tokens_out": 1570,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:33:06Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-214-0013",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Secrets extraction from Root of Trust indicates a severe threat with high impact and exploitability as proof of concept.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 524)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103831,
+      "tokens_in": 584,
+      "tokens_out": 2373,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:36:16Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-216-0015",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Firmware rollbacks allowed enable adversarial downgrades to vulnerable versions, per EMB3D evidence of observed behavior, leading to high risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 547)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 99189,
+      "tokens_in": 583,
+      "tokens_out": 2253,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:42:13Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-218-0017",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-218",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Operating System Susceptible to Rootkit \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"OS susceptible to rootkit with known exploitable weakness per EMB3D indicates high compromise risk in DRIVE system.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 519)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 118866,
+      "tokens_in": 585,
+      "tokens_out": 2454,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:46:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-220-0019",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable hardware root of trust with known exploitable weakness leads to high impact and likelihood of exploitation.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 523)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 127166,
+      "tokens_in": 584,
+      "tokens_out": 2610,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:50:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-226-0025",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "DRIVE software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"DRIVE software leaks security info in logs, a known exploitable weakness per EMB3D, indicating high risk of information disclosure in OT.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 542)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 139650,
+      "tokens_in": 583,
+      "tokens_out": 2864,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T06:55:45Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-301-0026",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"EMB3D TID-301 observed adversarial technique modifying binaries indicates high threat with severe impact in OT systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 523)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 86479,
+      "tokens_in": 580,
+      "tokens_out": 1716,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:02:40Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-308-0030",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Adversarial code overwrite evades detection, indicating high impact and likelihood for potential operational disruption in DRIVE software.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 542)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 161739,
+      "tokens_in": 582,
+      "tokens_out": 3203,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:06:47Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-316-0038",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-316",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Incorrect Certificate Verification Allows Authentication Bypass \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Incorrect certificate verification allows authentication bypass in DRIVE software, a known exploitable weakness with high impact and likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 549)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 142842,
+      "tokens_in": 586,
+      "tokens_out": 2827,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:11:03Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-325-0047",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP Injection vulnerability in DRIVE software allows data manipulation, proof-of-concept maturity, high exposure from network connectivity.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 3,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 544)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 152059,
+      "tokens_in": 582,
+      "tokens_out": 2971,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:12:50Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-329-0051",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "DRIVE software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 3 column 12 (char 36)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 106195,
+      "tokens_in": 541,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:19:40Z"
+    },
+    "input": {
+      "uid": "DRIVE-threat-TID-406-0056",
+      "device_type": "DRIVE",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "DRIVE software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Unauthorized messages or connections indicate a threat with high likelihood and impact due to observed adversarial technique in networking.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 544)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 153349,
+      "tokens_in": 581,
+      "tokens_out": 3060,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:21:12Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Inadequate bootloader protection on HMI allows unauthorized access, high impact and likelihood per EMB3D TID-201.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 517)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 91370,
+      "tokens_in": 543,
+      "tokens_out": 1787,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:24:43Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HMI with known exploitable network stack weakness indicates high risk due to potential remote compromise and critical impact on operations.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 544)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 109229,
+      "tokens_in": 584,
+      "tokens_out": 2218,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:28:57Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HMI unpatchable vulnerabilities with observed adversarial behavior per EMB3D indicate high threat risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 19 column 5 (char 444)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 151099,
+      "tokens_in": 582,
+      "tokens_out": 2999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:32:22Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Unencrypted SW/FW updates enable interception and tampering, leading to high vulnerability and impact on HMI operations.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 524)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 103505,
+      "tokens_in": 583,
+      "tokens_out": 1984,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:40:12Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Firmware rollback on HMI allows attack entry, high impact from critical role, observed adversarial behavior increases likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 534)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 214358,
+      "tokens_in": 583,
+      "tokens_out": 4342,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:43:53Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable hardware root of trust with known exploitable weakness in HMI system software indicates high risk due to severe impact and high likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 555)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 115699,
+      "tokens_in": 584,
+      "tokens_out": 2264,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:48:09Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HMI binaries modification is an observed adversarial technique with high impact, medium exposure, high vulnerability, leading to high risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 20 column 16 (char 520)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 150792,
+      "tokens_in": 580,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:51:55Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HMI software escaping sandbox indicates a security threat with high impact due to potential system control, per EMB3D evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 3,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 531)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 121070,
+      "tokens_in": 582,
+      "tokens_out": 2342,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T07:56:07Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HMI default credentials enable adversarial access per EMB3D TID-311, leading to high operational impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 509)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 148066,
+      "tokens_in": 579,
+      "tokens_out": 2908,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:00:25Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Password retrieval abuse in HMI software indicates a security threat with high impact due to potential unauthorized access and system compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 18 column 25 (char 481)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 153276,
+      "tokens_in": 582,
+      "tokens_out": 2999,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:07:32Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HTTP session hijacking on HMI with known exploitable weakness indicates high risk of unauthorized access and operational disruption.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 537)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 168426,
+      "tokens_in": 582,
+      "tokens_out": 3340,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:14:00Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 3,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 3
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Cryptographic timing side-channel in HMI is a known exploitable weakness with high vulnerability. Moderate exposure if networked, high impact on critical operations, leading to high likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 597)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 126533,
+      "tokens_in": 582,
+      "tokens_out": 2457,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:18:11Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unauthorized HMI connections indicate threat with high impact, vulnerability from observed technique, and exposure, leading to max risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 540)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 145469,
+      "tokens_in": 581,
+      "tokens_out": 2857,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:19:55Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 3,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 6
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 11 column 20 (char 172)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 102707,
+      "tokens_in": 539,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:23:29Z"
+    },
+    "input": {
+      "uid": "HMI-benign-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Weak crypto protocol in HMI software is a known exploitable vulnerability, leading to high risk of network attacks and critical impact on OT systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 553)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 109840,
+      "tokens_in": 582,
+      "tokens_out": 2154,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:27:29Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-201-0000",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-201",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Inadequate Bootloader Protection and Verification \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Inadequate bootloader protection on HMI allows unauthorized code execution, leading to high impact on OT systems. Observed adversarial technique increases likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 570)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 135127,
+      "tokens_in": 583,
+      "tokens_out": 2628,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:33:51Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-202-0001",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-202",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Exploitable System Network Stack Component \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Known exploitable weakness in HMI network stack component poses high risk due to potential unauthorized access and disruption in OT environment.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 548)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 120782,
+      "tokens_in": 584,
+      "tokens_out": 2349,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:40:42Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-210-0009",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable HMI vulnerabilities with observed adversarial behavior indicate high impact and likelihood of exploitation.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 524)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 147061,
+      "tokens_in": 582,
+      "tokens_out": 2876,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:47:44Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-215-0014",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-215",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unencrypted SW/FW Updates \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Unencrypted updates on HMI allow interception and tampering, indicating a threat with high impact and likelihood per EMB3D evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 537)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 159286,
+      "tokens_in": 583,
+      "tokens_out": 3022,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T08:54:14Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-216-0015",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Firmware rollback allows downgrade to vulnerable versions, observed adversarial behavior, high risk of system compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 525)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 125260,
+      "tokens_in": 583,
+      "tokens_out": 2370,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:01:22Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-220-0019",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-220",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "HMI software: Unpatchable Hardware Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable hardware root of trust in HMI with known exploitable weakness indicates high vulnerability and impact, leading to severe risk.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 543)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 166086,
+      "tokens_in": 584,
+      "tokens_out": 3202,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:03:09Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-301-0026",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-301",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Applications Binaries Modified \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"H",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 11 column 20 (char 172)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 107065,
+      "tokens_in": 540,
+      "tokens_out": 2000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:10:33Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-306-0030",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-306",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Sandboxed Environments Escaped \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Sandbox escape in HMI software indicates a high-severity threat with potential system compromise, as per EMB3D TID-306 proof of concept.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 541)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 178515,
+      "tokens_in": 582,
+      "tokens_out": 3455,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:16:43Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-311-0035",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-311",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Default Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Default credentials on HMI enable unauthorized access, high impact in OT per EMB3D TID-311 scenario.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 504)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98504,
+      "tokens_in": 579,
+      "tokens_out": 1931,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:23:47Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-315-0039",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Abuse of password retrieval mechanism in HMI software indicates a threat with high impact due to potential unauthorized access.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 532)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 172497,
+      "tokens_in": 582,
+      "tokens_out": 3565,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:30:25Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-321-0045",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-321",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: HTTP Application Session Hijacking \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"HTTP session hijacking on HMI with known exploitable weakness indicates high risk due to potential unauthorized access and operational disruption.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 551)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 147278,
+      "tokens_in": 582,
+      "tokens_out": 2993,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:36:20Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-330-0054",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-330",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "HMI software: Cryptographic Timing Side-Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 9
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Known exploitable weakness in HMI software with cryptographic timing side-channel indicates high risk due to potential data leakage and system compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 558)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 110969,
+      "tokens_in": 582,
+      "tokens_out": 2294,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:40:16Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-406-0057",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-406",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Unauthorized Messages or Connections \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unauthorized messages or connections on HMI indicate adversarial access, high impact on control systems, likely due to network exposure and known vulnerabilities.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 566)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 135853,
+      "tokens_in": 581,
+      "tokens_out": 2753,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:44:09Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-410-0060",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-410",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Cryptographic Protocol Side Channel \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 3,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Cryptographic side channel in HMI software poses threat to data confidentiality and integrity, with proof-of-concept maturity indicating potential exploitability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting property name enclosed in double quotes: line 15 column 12 (char 444)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 137786,
+      "tokens_in": 579,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:47:50Z"
+    },
+    "input": {
+      "uid": "HMI-threat-TID-411-0061",
+      "device_type": "HMI",
+      "emb3d_tid": "TID-411",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "networking",
+      "scenario": "HMI software: Weak/Insecure Cryptographic Protocol \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 3,
+      "likelihood": 5,
+      "vulnerability": 3,
+      "exposure": 3,
+      "risk_raw": 15
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Weak cryptographic protocol in HMI software exposes critical system to network attacks, high risk from known exploitability and critical impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 549)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 125345,
+      "tokens_in": 582,
+      "tokens_out": 2713,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T09:54:34Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Container escape in PLC software with known exploitable weakness indicates a high-risk threat to OT systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 513)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 164545,
+      "tokens_in": 577,
+      "tokens_out": 3294,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:02:20Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Virtual Machine Escape is a known exploitable weakness in PLC system software, indicating high risk due to potential critical infrastructure compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 557)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 191037,
+      "tokens_in": 578,
+      "tokens_out": 3542,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:10:31Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable PLC vulnerabilities with observed adversarial behavior lead to critical risk due to high impact and likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 528)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 218769,
+      "tokens_in": 580,
+      "tokens_out": 4107,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:17:54Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Proof of concept vulnerability allows secret extraction from PLC root of trust, posing critical risk of unauthorized access and system compromise.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 550)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 172750,
+      "tokens_in": 582,
+      "tokens_out": 3312,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:24:56Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Firmware update rollbacks permitted, allowing adversarial revert to vulnerable versions, increasing risk per EMB3D evidence.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 529)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 153401,
+      "tokens_in": 581,
+      "tokens_out": 3006,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:31:59Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"PLC leaks security info in logs, known exploitable weakness per EMB3D TID-226, high risk due to potential unauthorized access in OT.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 537)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 164727,
+      "tokens_in": 581,
+      "tokens_out": 3220,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:38:53Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 4,\n    \"vulnerability\": 3,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 16,\n  \"justification\": \"Inconsistent device code representations in PLC software indicate a vulnerability per EMB3D TID-307 proof of concept, suggesting potential exploitation.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 3,\n    \"likelihood_raw\": 4,\n    \"likelihood_clamped\": 4,\n    \"impact\": 4,\n    \"risk_raw\": 16\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 556)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 155728,
+      "tokens_in": 579,
+      "tokens_out": 3084,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:40:35Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Code overwritten on PLC to evade detection indicates malicious activity with high impact potential in OT systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 517)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 101670,
+      "tokens_in": 540,
+      "tokens_out": 1997,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:47:09Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Remotely accessible unauthenticated services on PLC enable adversarial access, increasing risk per EMB3D TID-310.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 518)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 138784,
+      "tokens_in": 583,
+      "tokens_out": 2754,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:51:26Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\":",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting value: line 11 column 19 (char 171)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 152019,
+      "tokens_in": 580,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T10:58:32Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"XSS vulnerability in PLC software is known exploitable per EMB3D, posing high risk due to potential remote code execution.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 527)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 165497,
+      "tokens_in": 583,
+      "tokens_out": 3064,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:00:12Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP Injection on PLC software threatens unauthorized access and process disruption, per EMB3D TID-325 proof of concept.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 3,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 524)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 98800,
+      "tokens_in": 540,
+      "tokens_out": 1814,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:07:34Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 1,
+      "impact": 4,
+      "likelihood": 1,
+      "vulnerability": 1,
+      "exposure": 1,
+      "risk_raw": 4
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 2\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Hardcoded credentials in PLC software allow unauthorized access, observed in adversarial techniques, high impact and likelihood.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 2,\n    \"vul\": 5,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 533)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 170595,
+      "tokens_in": 579,
+      "tokens_out": 3205,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:14:59Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 2,
+      "exposure": 1,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Improper password storage in PLC software allows unauthorized access, high impact due to known exploitable weakness and OT system compromise risks.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 551)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 173647,
+      "tokens_in": 579,
+      "tokens_out": 3221,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:21:53Z"
+    },
+    "input": {
+      "uid": "PLC-benign-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "benign",
+      "risk": 2,
+      "impact": 4,
+      "likelihood": 2,
+      "vulnerability": 1,
+      "exposure": 2,
+      "risk_raw": 8
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unencrypted sensitive data communication on PLC allows eavesdropping or tampering, posing high risk in OT networks.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 519)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 140821,
+      "tokens_in": 580,
+      "tokens_out": 2616,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:26:31Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-207-0006",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-207",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Container Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Container escape in PLC software, a known exploitable weakness, indicates high exploit likelihood and severe operational impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 20 column 5 (char 497)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 164159,
+      "tokens_in": 577,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:30:23Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-208-0007",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-208",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Virtual Machine Escape \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Virtual Machine Escape with known exploitable weakness in PLC system software indicates high threat likelihood and impact.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 526)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 119900,
+      "tokens_in": 578,
+      "tokens_out": 2169,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:37:42Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-210-0009",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-210",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device Vulnerabilities Unpatchable \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unpatchable PLC software vulnerabilities with observed adversarial behavior pose severe risk to critical OT systems.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 520)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 162947,
+      "tokens_in": 580,
+      "tokens_out": 2996,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:42:16Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-214-0013",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-214",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Secrets Extracted from Device Root of Trust \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Secrets extraction from root of trust indicates critical threat with high impact. Proof of concept maturity suggests moderate exposure but severe vulnerability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 5,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 565)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 161759,
+      "tokens_in": 582,
+      "tokens_out": 2894,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:49:30Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-216-0015",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-216",
+      "emb3d_maturity": "observed adversarial behavior",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Firmware Update Rollbacks Allowed \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Firmware rollbacks enable downgrade to vulnerable versions, allowing attacks as observed in EMB3D TID-216.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 511)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 156342,
+      "tokens_in": 581,
+      "tokens_out": 2867,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T11:57:35Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-226-0025",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-226",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "system software",
+      "scenario": "PLC software: Device leaks security information in logs \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"PLC software leaks security information in logs, a known exploitable weakness, leading to potential information disclosure and increased attack surface. Impact high due to OT criticality.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 592)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 200084,
+      "tokens_in": 581,
+      "tokens_out": 3632,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:05:01Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-307-0032",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-307",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Device Code Representations Inconsistent \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Inconsistent code representations in PLC software per EMB3D TID-307 proof of concept indicate a threat with high impact potential.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 535)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 167280,
+      "tokens_in": 579,
+      "tokens_out": 3036,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:08:48Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-308-0033",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-308",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Code Overwritten to Avoid Detection \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"PLC code overwritten to avoid detection is an adversarial technique with high impact on operations and high likelihood due to exposure and vulnerability.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 4,\n    \"likelihood_raw\": 7,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 557)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 115166,
+      "tokens_in": 580,
+      "tokens_out": 2055,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:13:19Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-310-0035",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-310",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Remotely Accessible Unauthenticated Services \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Remotely accessible unauthenticated services on PLC indicate high threat due to potential unauthorized access and control, leading to critical impacts in OT environments.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": false\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 575)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 156381,
+      "tokens_in": 583,
+      "tokens_out": 2839,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:17:31Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-315-0040",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-315",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Password Retrieval Mechanism Abused \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 3,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"Password retrieval mechanism abuse in PLC software proof of concept indicates high vulnerability and exposure, leading to significant impact and likelihood of unauthorized access.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 3,\n    \"likelihood_raw\": 5,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 583)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 138081,
+      "tokens_in": 580,
+      "tokens_out": 2489,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:22:11Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-319-0044",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-319",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Cross Site Scripting (XSS) \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"XSS in PLC software is known exploitable, posing high risk due to potential",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Unterminated string starting at: line 11 column 20 (char 172)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 168661,
+      "tokens_in": 583,
+      "tokens_out": 3000,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:29:28Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-325-0050",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-325",
+      "emb3d_maturity": "proof of concept",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: HTTP Injection/Response Splitting \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 4,\n  \"ilve\": {\n    \"impact\": 4,\n    \"likelihood\": 5,\n    \"vulnerability\": 4,\n    \"exposure\": 3\n  },\n  \"risk_raw\": 20,\n  \"justification\": \"HTTP injection on PLC software enables response splitting, potentially allowing unauthorized access, based on EMB3D TID-325 proof of concept.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 3,\n    \"vul\": 4,\n    \"likelihood_raw\": 6,\n    \"likelihood_clamped\": 5,\n    \"impact\": 4,\n    \"risk_raw\": 20\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 545)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 156354,
+      "tokens_in": 580,
+      "tokens_out": 2836,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:33:49Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-328-0053",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-328",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Hardcoded Credentials \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 3,
+      "impact": 4,
+      "likelihood": 3,
+      "vulnerability": 2,
+      "exposure": 2,
+      "risk_raw": 12
+    },
+    "model_output": {
+      "raw_text": "{\"variant\":\"threat\",\"risk\":5,\"ilve\":{\"impact\":5,\"likelihood\":5,\"vulnerability\":5,\"exposure\":3},\"risk_raw\":25,\"justification\":\"Hardcoded credentials enable unauthorized access to PLC, high impact and likelihood due to ease of exploitation.\",\"rule_consistency\":{\"likelihood_equals_exposure_plus_vulnerability_minus_1\":true},\"calc\":{\"exp\":3,\"vul\":5,\"likelihood_raw\":7,\"likelihood_clamped\":5,\"impact\":5,\"risk_raw\":25}}",
+      "parsed": {
+        "variant": "threat",
+        "risk": 5,
+        "ilve": {
+          "impact": 5,
+          "likelihood": 5,
+          "vulnerability": 5,
+          "exposure": 3
+        },
+        "risk_raw": 25,
+        "justification": "Hardcoded credentials enable unauthorized access to PLC, high impact and likelihood due to ease of exploitation.",
+        "rule_consistency": {
+          "likelihood_equals_exposure_plus_vulnerability_minus_1": true
+        },
+        "calc": {
+          "exp": 3,
+          "vul": 5,
+          "likelihood_raw": 7,
+          "likelihood_clamped": 5,
+          "impact": 5,
+          "risk_raw": 25
+        }
+      },
+      "validation": {
+        "json_valid": true,
+        "error": null
+      }
+    },
+    "telemetry": {
+      "latency_ms": 148407,
+      "tokens_in": 579,
+      "tokens_out": 2639,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:37:57Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-329-0054",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-329",
+      "emb3d_maturity": "known exploitable weakness",
+      "emb3d_category": "application software",
+      "scenario": "PLC software: Improper Password Storage \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 3,
+      "exposure": 2,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 4\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Improper password storage in PLC software is a known exploitable weakness (TID-329), leading to high risk from unauthorized access and control impact in OT environments.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 4,\n    \"vul\": 5,\n    \"likelihood_raw\": 8,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 573)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 134803,
+      "tokens_in": 579,
+      "tokens_out": 2369,
+      "http_status": 200
+    }
+  },
+  {
+    "meta": {
+      "provider": "deepseek",
+      "model": "deepseek-reasoner",
+      "prompt_id": "P1",
+      "run_index": 1,
+      "timestamp_utc": "2025-09-08T12:42:09Z"
+    },
+    "input": {
+      "uid": "PLC-threat-TID-408-0061",
+      "device_type": "PLC",
+      "emb3d_tid": "TID-408",
+      "emb3d_maturity": "observed adversarial technique",
+      "emb3d_category": "networking",
+      "scenario": "PLC software: Unencrypted Sensitive Data Communication \u00e2\u20ac\u201d per EMB3D description/evidence."
+    },
+    "ground_truth": {
+      "variant": "threat",
+      "risk": 4,
+      "impact": 4,
+      "likelihood": 4,
+      "vulnerability": 2,
+      "exposure": 3,
+      "risk_raw": 16
+    },
+    "model_output": {
+      "raw_text": "{\n  \"variant\": \"threat\",\n  \"risk\": 5,\n  \"ilve\": {\n    \"impact\": 5,\n    \"likelihood\": 5,\n    \"vulnerability\": 5,\n    \"exposure\": 5\n  },\n  \"risk_raw\": 25,\n  \"justification\": \"Unencrypted sensitive data communication on PLC, per EMB3D TID-408, indicates high risk of data interception and exploitation.\",\n  \"rule_consistency\": {\n    \"likelihood_equals_exposure_plus_vulnerability_minus_1\": true\n  },\n  \"calc\": {\n    \"exp\": 5,\n    \"vul\": 5,\n    \"likelihood_raw\": 9,\n    \"likelihood_clamped\": 5,\n    \"impact\": 5,\n    \"risk_raw\": 25\n  }",
+      "parsed": null,
+      "validation": {
+        "json_valid": false,
+        "error": "Expecting ',' delimiter: line 22 column 4 (char 530)"
+      }
+    },
+    "telemetry": {
+      "latency_ms": 139343,
+      "tokens_in": 580,
+      "tokens_out": 2525,
+      "http_status": 200
+    }
+  }
+]
