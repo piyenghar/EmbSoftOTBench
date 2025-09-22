@@ -61,19 +61,24 @@ Each entry is scored across **five key factors**:
 
 4. **Likelihood (1–5)**  
    - **Derived** from exposure + vulnerability:  
-     ```
-     Likelihood = min(Exposure + Vulnerability - 1, 5)
-     ```
 
-5. **Risk**  
-   - **Two fields are provided**:  
-     - `risk_raw`: numeric intermediate = Impact × Likelihood.  
-     - `risk`: final categorical risk (1–5) from a risk matrix:  
-       - Risk 1 = Low  
-       - Risk 2 = Medium  
-       - Risk 3 = Significant  
-       - Risk 4 = High  
-       - Risk 5 = Very High  
+   ```text
+   Likelihood = min(Exposure + Vulnerability - 1, 5)
+
+
+## Risk
+
+Two fields are provided:
+
+- **`risk_raw`**: numeric intermediate = Impact × Likelihood  
+- **`risk`**: final categorical risk (1–5) from a risk matrix:  
+  - Risk 1 = Low  
+  - Risk 2 = Medium  
+  - Risk 3 = Significant  
+  - Risk 4 = High  
+  - Risk 5 = Very High  
+
+---
 
 ## 📂 Dataset Files (v1.0)
 
@@ -81,21 +86,21 @@ The dataset is organized into four JSON files:
 
 - **`embsoftotbench-plc-v1.0.json`**  
   Threat/benign entries specific to **Programmable Logic Controllers (PLCs)**.  
-  Total: 128 entries.
+  Total: 128 entries.  
 
 - **`embsoftotbench-hmi-v1.0.json`**  
   Threat/benign entries specific to **Human-Machine Interfaces (HMIs)**.  
-  Total: 124 entries.
+  Total: 124 entries.  
 
 - **`embsoftotbench-drive-v1.0.json`**  
   Threat/benign entries specific to **Industrial Drives (motor controllers)**.  
-  Total: 122 entries.
+  Total: 122 entries.  
 
 - **`embsoftotbench-all-v1.0.json`**  
   Aggregated file combining **all three device types** above.  
-  Total: 374 entries.
+  Total: 374 entries.  
 
-Each entry in these files contains:
+Each entry in these files contains:  
 - `variant`: threat vs. benign  
 - `device_type`: PLC, HMI, or Drive  
 - `emb3d_tid`: EMB3D threat ID  
@@ -103,13 +108,33 @@ Each entry in these files contains:
 - `rationale`: factor-by-factor explanation  
 - `evidence`: CWE/CVE links if available  
 - `source_meta`: EMB3D STIX reference  
-- `uid`: dataset-specific unique identifier
----
----
-## 📜 License
+- `uid`: dataset-specific unique identifier  
+
+## 📊 Usage & Reproducibility
+
+### Dataset Use
+- Suitable for evaluating **LLM reasoning** about OT software risks.  
+- Enables controlled experiments with **threat vs. benign** pairs.  
+- Provides **factor-level rationales** for interpretability.  
+
+### Experimental Results
+Logs and outputs from evaluation experiments with LLMs are included for transparency.  
+
+- Location: [`/experiments/results/`](./experiments/results)  
+- Contents:  
+  - Raw model outputs (per run, with run IDs)  
+  - Processed logs (factor-wise comparisons, risk scores, match statistics)  
+  - Summary tables and figures  
+
+⚠️ **Note**: These results are **currently under publication/review**. Please cite the dataset and the corresponding paper (when available) if using them in research.  
+
+### 📜 License
+
 This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
-See the [LICENSE](./LICENSE) file for details.
+See the [LICENSE](./LICENSE) file for details.  
+
 ---
+
 ## 📑 Example Entry
 ```json
 {
@@ -147,3 +172,5 @@ See the [LICENSE](./LICENSE) file for details.
   },
   "uid": "PLC-threat-TID-201-0000"
 }
+
+
