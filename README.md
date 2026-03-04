@@ -126,8 +126,28 @@ Logs and outputs from evaluation experiments with LLMs are included for transpar
   - Processed logs (factor-wise comparisons, risk scores, match statistics)  
   - Summary tables and figures  
 
-⚠️ **Note**: These results are **currently under publication/review**. Please cite the dataset and the corresponding paper (when available) if using them in research.  
+## Citation
 
+If you use **EmbSoftOTBench** in your research, please cite the following publication:
+
+**Padma Iyenghar**,  
+*Empirical Evaluation of AI-Assisted Risk Reasoning for ICPS Software Security*,  
+IEEE Transactions on Industrial Cyber-Physical Systems, 2026.  
+DOI: https://doi.org/10.1109/TICPS.2026.3669084
+
+```bibtex
+@article{Iyenghar2026_TICPS_AI_Risk_Reasoning,
+  author    = {Iyenghar, Padma},
+  title     = {Empirical Evaluation of AI-Assisted Risk Reasoning for ICPS Software Security},
+  journal   = {IEEE Transactions on Industrial Cyber-Physical Systems},
+  year      = {2026},
+  publisher = {IEEE},
+  doi       = {10.1109/TICPS.2026.3669084},
+  keywords  = {Industrial Cyber-Physical Systems (ICPS), Operational Technology (OT) security,
+               AI-empowered ICPS, trustworthy and reliable ICPS, LLM benchmarking,
+               risk calibration, IEC 62443-3-2, MITRE EMB3D}
+}
+```
 ### 📜 License
 
 This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
